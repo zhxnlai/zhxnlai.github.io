@@ -7,6 +7,9 @@ var React = require('react'),
   AppBar = mui.AppBar,
   AppCanvas = mui.AppCanvas,
   Menu = mui.Menu,
+  Header = require('./components/header.jsx'),
+  Footer = require('./components/footer.jsx'),
+
   IconButton = mui.IconButton;
   // AppLeftNav = require('./app-left-nav.jsx');
   var Router = require('react-router'),
@@ -16,25 +19,14 @@ var Master = React.createClass({
 
   render: function() {
     return (
-      <AppCanvas predefinedLayout={1}>
+      <AppCanvas predefinedLayout={0}>
 
-        <AppBar
-          className="mui-dark-theme"
-          onMenuIconButtonTouchTap={this._onMenuIconButtonTouchTap}
-          title={<RouteHandler/>.props.pageTitle}
-          zDepth={0}>
-          <IconButton className="github-icon-button" icon="mui-icon-github" onTouchTap={this._onGithubTouchTap} />
-        </AppBar>
 
+        <Header />
         <RouteHandler />
 
-        <div className="footer full-width-section mui-dark-theme">
-          <p>
-            Hand crafted with love by the engineers at <a href="http://call-em-all.com">Call-Em-All</a> and our
-            awesome <a href="https://github.com/callemall/material-ui/graphs/contributors">contributors</a>.
-          </p>
-          <IconButton className="github-icon-button" icon="mui-icon-github" onTouchTap={this._onGithubTouchTap} />
-        </div>
+        <Footer />
+
 
       </AppCanvas>
     );

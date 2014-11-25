@@ -1,0 +1,34 @@
+var React = require('react'),
+mui = require('material-ui');
+
+var Footer = React.createClass({
+
+  propTypes: {
+    title : React.PropTypes.string,
+    onMenuIconClick: React.PropTypes.func,
+    zDepth: React.PropTypes.number
+  },
+
+  getDefaultProps: function() {
+    return {
+      title: '',
+      zDepth: 1
+    }
+  },
+  _onRippleClick: function(ref) {
+
+  },
+  render: function() {
+
+
+    return (
+      <div className="footer">
+        <a herf="mailto:zhxnlai@gmail.com">zhxnlai@gmail.com</a>
+        <p>© 2010-2014 Zhixuan Lai</p>
+      </div>
+    );
+  }
+
+});
+
+module.exports = Footer;

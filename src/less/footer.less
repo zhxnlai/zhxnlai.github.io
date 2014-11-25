@@ -1,7 +1,16 @@
 .footer {
 
-  background-color: @grey-900;
-  text-align: center;
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  z-index: 999;
+
+  // -webkit-transform: translate(-50%, 0%);
+  // -ms-transform: translate(-50%, 0%);
+  // transform: translate(-50%, 0%);
+
+  // background-color: @grey-900;
+  text-align: right;
 
   a {
     .mui-text-dark-white;
@@ -17,4 +26,34 @@
   .mui-icon-button {
     color: @dark-white;
   }
+}
+
+.header {
+  position: fixed;
+  top: 2em;
+  right: 2em;
+  z-index: 999;
+
+  // -webkit-transform: translate(-50%, 0%);
+  // -ms-transform: translate(-50%, 0%);
+  // transform: translate(-50%, 0%);
+
+  li {
+    list-style:none;
+  }
+
+  li .demo-button, li .github-button {
+    margin-bottom: 32px;
+    // margin-right: 16px;
+
+    .mui-paper-button-content {
+      color: @primary-1-color;
+    }
+  }
+
+  li .github-button {
+    margin-bottom: 0;
+  }
+
+
 }
