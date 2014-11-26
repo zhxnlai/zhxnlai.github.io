@@ -15,9 +15,6 @@ var Footer = React.createClass({
       zDepth: 1
     }
   },
-  _onRippleClick: function(ref) {
-
-  },
   render: function() {
 
 

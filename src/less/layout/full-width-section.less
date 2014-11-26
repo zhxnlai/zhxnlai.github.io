@@ -19,51 +19,27 @@
 }
 
 .full-page-section {
-  padding: @desktop-gutter;
+  padding: 0 auto;
   .clearfix();
 
-  height: 100vh;
+  min-height: 100vh;
 
   .full-page-section-center-content {
-    position: relative;
-    top: 40%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-
     max-width: 1200px;
     margin: 0 auto;
-  }
-  .full-page-section-bottom-content {
-    position: relative;
-    top: 90%;
-    -webkit-transform: translateY(-150%);
-    -ms-transform: translateY(-150%);
-    transform: translateY(-150%);
 
-    max-width: 1200px;
-    margin: 0 auto;
-  }
 
-  .full-page-section-right-content {
-    position: fixed;
-    left: 90%;
-    -webkit-transform: translateX(-150%);
-    -ms-transform: translateX(-150%);
-    transform: translateX(-150%);
-
-    max-width: 1200px;
-    margin: 0 auto;
   }
 
 
-  @media @device-small {
-    padding-top: (@desktop-gutter * 2);
-    padding-bottom: (@desktop-gutter * 2);
-  }
 
-  @media @device-large {
-    padding-top: (@desktop-gutter * 3);
-    padding-bottom: (@desktop-gutter * 3);
-  }
+  // @media @device-small {
+  //   padding-top: (@desktop-gutter * 2);
+  //   padding-bottom: (@desktop-gutter * 2);
+  // }
+  //
+  // @media @device-large {
+  //   padding-top: (@desktop-gutter * 3);
+  //   padding-bottom: (@desktop-gutter * 3);
+  // }
 }

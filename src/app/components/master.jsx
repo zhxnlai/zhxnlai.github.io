@@ -15,19 +15,17 @@ var React = require('react'),
   var Router = require('react-router'),
   RouteHandler = Router.RouteHandler;
 
+  var pageTitles = ["home", "apps", "games", "code", "about"];
+  var pageIcons = ["action-home", "hardware-phone-iphone", "hardware-gamepad", "mui-icon-github", "action-info-outline"];
+
 var Master = React.createClass({
 
   render: function() {
     return (
       <AppCanvas predefinedLayout={0}>
-
-
-        <Header />
+        <Header pageTitles={pageTitles} pageIcons={pageIcons}/>
         <RouteHandler />
-
         <Footer />
-
-
       </AppCanvas>
     );
   },

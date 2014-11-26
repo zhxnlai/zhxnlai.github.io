@@ -1,46 +1,38 @@
 var React = require('react'),
+  Router = require('react-router'),
   mui = require('material-ui'),
   Paper = mui.Paper,
   PaperButton = mui.PaperButton;
 
+
 var Header = React.createClass({
+  mixins: [Router.Navigation, Router.State],
 
-  propTypes: {
-    title : React.PropTypes.string,
-    onMenuIconClick: React.PropTypes.func,
-    zDepth: React.PropTypes.number
+  getInitialState: function() {
+    return {curPageIndex: 0};
   },
 
-  getDefaultProps: function() {
-    return {
-      title: '',
-      zDepth: 1
-    }
-  },
-  _onRippleClick: function(ref) {
-
+  _onButtonClick: function(ref, i) {
+      this.transitionTo(ref);
   },
   render: function() {
-
+    var pageButtons = this.props.pageTitles.map(function(pageTitle, i) {
+      return (
+        <li>
+        <PaperButton className="demo-button" key={pageTitle} ref={pageTitle} primary={this.isActive(pageTitle)} type="FAB" icon={this.props.pageIcons[i]} onClick={this._onButtonClick.bind(this, pageTitle, i)}/>
+        </li>
+      )
+    }, this)
 
     return (
         <ul className="header">
-        <li>
-          <PaperButton className="demo-button" ref="app" type="FAB" icon="hardware-phone-iphone" onClick={this._onRippleClick.bind(this, "app")} />
-        </li>
-        <li>
-          <PaperButton className="demo-button" ref="games" type="FAB" icon="hardware-gamepad" onClick={this._onRippleClick.bind(this, "games")} />
-        </li>
-        <li>
-          <PaperButton className="demo-button" ref="code" type="FAB" icon="mui-icon-github" onClick={this._onRippleClick.bind(this, "code")} />
-        </li>
-        <li>
-          <PaperButton className="github-button" ref="about" type="FAB" icon="action-info-outline" onClick={this._onRippleClick.bind(this, "about")} />
-        </li>
+        {pageButtons}
 
         </ul>
     );
-  }
+  },
+
+
 
 });
 

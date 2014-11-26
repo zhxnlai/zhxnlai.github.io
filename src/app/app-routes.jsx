@@ -10,8 +10,12 @@ var React = require('react'),
   DefaultRoute = Router.DefaultRoute,
 
   Master = require('./components/master.jsx'),
-	Home = require('./components/pages/home.jsx'),
-	// GetStarted = require('./components/pages/get-started.jsx'),
+  Home = require('./components/pages/home.jsx'),
+  Apps = require('./components/pages/apps.jsx'),
+  Games = require('./components/pages/games.jsx'),
+  Code = require('./components/pages/code.jsx'),
+  About = require('./components/pages/about.jsx'),
+  // GetStarted = require('./components/pages/get-started.jsx'),
   // PageWithNav = require('./components/pages/page-with-nav.jsx'),
   //
   // Colors = require('./components/pages/css-framework/colors.jsx'),
@@ -51,10 +55,12 @@ var React = require('react'),
 
 var AppRoutes = (
   // <Routes scrollBehavior="scrollToTop">
-    <Route name="root" path="/" handler={Master}>
-    	<Route name="home" handler={Home} />
-
-
+    <Route name="root" path="/" handler={Master}  >
+      <Route name="home" handler={Home} />
+      <Route name="apps" handler={Apps} />
+      <Route name="games" handler={Games} />
+      <Route name="code" handler={Code} />
+      <Route name="about" handler={About} />
       <DefaultRoute handler={Home}/>
     </Route>
   // </Routes>

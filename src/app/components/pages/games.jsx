@@ -19,7 +19,7 @@ PaperButton = mui.PaperButton,
 Paper = mui.Paper;
 // HomeFeature = require('./home-feature.jsx');
 
-var HomePage = React.createClass({
+var GamesPage = React.createClass({
 
   mixins: [Router.Navigation],
 
@@ -35,10 +35,20 @@ var HomePage = React.createClass({
 
       <div className="catelog l-box-lrg pure-g">
       <div className="l-box pure-u-1">
-      <h1 className="mui-font-style-display-3">Home</h1>
+      <h1 className="mui-font-style-display-3">Games</h1>
       <p className="mui-font-style-headline">Fun is important.</p>
       </div>
 
+      <div className="l-box pure-u-1 pure-u-sm-1-2 pure-u-md-1-3">
+      <Feature heading="Get Started" route="home" img="images/get-started.svg" />
+      </div>
+      <div className="l-box pure-u-1 pure-u-sm-1-2 pure-u-md-1-3">
+      <Feature heading="Get Started" route="home" img="images/get-started.svg" />
+      </div>
+
+      <div className="l-box pure-u-1 pure-u-sm-1-2 pure-u-md-1-3">
+      <Feature heading="Get Started" route="home" img="images/get-started.svg" />
+      </div>
 
       </div>
       </div>
@@ -112,4 +122,4 @@ var HomePage = React.createClass({
 
 });
 
-module.exports = HomePage;
+module.exports = GamesPage;
