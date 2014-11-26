@@ -9,9 +9,9 @@ var React = require('react'),
   Menu = mui.Menu,
   Header = require('./components/header.jsx'),
   Footer = require('./components/footer.jsx'),
-
   IconButton = mui.IconButton;
-  // AppLeftNav = require('./app-left-nav.jsx');
+
+  var ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
   var Router = require('react-router'),
   RouteHandler = Router.RouteHandler;
 
@@ -19,12 +19,16 @@ var React = require('react'),
   var pageIcons = ["action-home", "hardware-phone-iphone", "hardware-gamepad", "mui-icon-github", "action-info-outline"];
 
 var Master = React.createClass({
+  mixins: [Router.State],
 
   render: function() {
+    console.log(this.getPath())
     return (
-      <AppCanvas predefinedLayout={0}>
+      <AppCanvas className="master" predefinedLayout={0}>
         <Header pageTitles={pageTitles} pageIcons={pageIcons}/>
-        <RouteHandler />
+        <ReactCSSTransitionGroup transitionName="example">
+          <RouteHandler key={this.getPath()} />
+        </ReactCSSTransitionGroup>
         <Footer />
       </AppCanvas>
     );

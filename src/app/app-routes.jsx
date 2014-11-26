@@ -61,9 +61,11 @@ var AppRoutes = (
       <Route name="games" handler={Games} />
       <Route name="code" handler={Code} />
       <Route name="about" handler={About} />
-      <DefaultRoute handler={Home}/>
+      <Redirect from="*" to="home" />
     </Route>
   // </Routes>
 );
+//      <DefaultRoute handler={Home}/>
+
 
 module.exports = AppRoutes;

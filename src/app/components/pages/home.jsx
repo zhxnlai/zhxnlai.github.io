@@ -13,37 +13,22 @@ mui = require('material-ui'),
 Ripple = mui.Ripple,
 DOM = require('../utils/dom.js'),
 Feature = require('../components/feature.jsx'),
+Headline = require('../components/headline.jsx'),
 $ = require('jquery'),
 Velocity = require('velocity-animate'),
 PaperButton = mui.PaperButton,
 Paper = mui.Paper;
-// HomeFeature = require('./home-feature.jsx');
 
 var HomePage = React.createClass({
-
   mixins: [Router.Navigation],
 
   render: function() {
-
-
-
     return (
-      <div className="mui-app-content-canvas">
-
-      <div className="home-page-hero full-page-section ">
-      <div className="full-page-section-center-content">
-
-      <div className="catelog l-box-lrg pure-g">
-      <div className="l-box pure-u-1">
-      <h1 className="mui-font-style-display-3">Home</h1>
-      <p className="mui-font-style-headline">Fun is important.</p>
-      </div>
-
-
-      </div>
-      </div>
-      </div>
-      </div>
+        <div className="home-page-hero full-page-section ">
+          <div className="full-page-section-center-content">
+            <Headline headline="Home" subhead="."/>
+          </div>
+        </div>
     );
   },
   elementRect: function(el) {
