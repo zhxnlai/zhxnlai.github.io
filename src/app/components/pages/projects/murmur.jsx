@@ -99,7 +99,7 @@ var Murmur = React.createClass({
           <div  className="l-box pure-u-1 ">
           <div className={appImagesClassName}>
             <div  className="pure-u-1 ">
-            <img className="pure-img-responsive" src="images/projects/murmur/swipeable-view/swipeleft.gif"/>
+            <img className="pure-img-responsive" src="images/projects/murmur/swipeable-view/swipe-left.gif"/>
             </div>
             <div  className="pure-u-1 ">
             <p>ZLSwipeableView</p>
