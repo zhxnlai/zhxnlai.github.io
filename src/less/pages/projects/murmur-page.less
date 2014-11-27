@@ -1,40 +1,4 @@
-.talkly-page {
-  background-color: @light-blue-600;
-  overflow: hidden;
-  .svg-logo {
-    margin-left: 50%;
-    transform: translateX(-50%);
-    max-width: 420px;
-  }
-
-  .tagline {
-    margin: 16px auto 0 auto;
-    text-align: center;
-    max-width: 575px;
-
-    h2 {
-      .mui-font-style-title;
-    }
-
-    h1, h2 {
-      color: @dark-white;
-      .mui-font-weight-light;
-    }
-
-    @media @device-large {
-      margin-top: 32px;
-
-      h1 {
-        font-size: 56px;
-      }
-
-      h2 {
-        .mui-font-style-headline;
-        color: @dark-white;
-        .mui-font-weight-light;
-      }
-    }
-  }
+.murmur-page {
 
   .full-width-section-content {
     max-width: 700px;
@@ -45,6 +9,153 @@
     .mui-font-weight-light;
     padding: 0;
     margin: 0;
+  }
+
+  h2 {
+    .mui-font-style-headline
+  }
+
+  .murmur-hero {
+    background-color: @grey-100;
+    overflow: hidden;
+
+    .svg-logo {
+      margin-left: 50%;
+      transform: translateX(-50%);
+      max-width: 420px;
+      width: 80%;
+    }
+
+    .tagline {
+      margin: 16px auto 0 auto;
+      text-align: center;
+      max-width: 575px;
+
+      h2 {
+        .mui-font-style-title;
+      }
+
+      h1, h2 {
+        color: @dark-black;
+        .mui-font-weight-light;
+      }
+
+      @media @device-large {
+        margin-top: 32px;
+
+        h1 {
+          font-size: 56px;
+        }
+
+        h2 {
+          .mui-font-style-headline;
+          color: @dark-black;
+          .mui-font-weight-light;
+        }
+      }
+    }
+
+  }
+
+
+  .murmur-intro {
+    background-color: @grey-200;
+    text-align: center;
+    h2 {
+      .mui-font-style-display-1;
+    }
+    p {
+      // color: @dark-white;
+    }
+  }
+
+
+  .murmur-features {
+    background-color: @cyan-300;
+    text-align: center;
+    .full-width-section-content {
+      // max-width: 1200px;
+    }
+    h2 {
+      .mui-font-style-display-1;
+    }
+  }
+
+
+  .murmur-pitch {
+    text-align: center;
+    p {
+      color: @dark-white;
+    }
+
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      padding-top: 25px;
+      height: 0;
+      width: 100%;
+
+    }
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+
+  .murmur-mvp {
+    // background-color: @orange-800;
+
+    background: transparent url("images/projects/murmur/v1/sketch.jpg") 0 0 no-repeat fixed;
+    /*background: url(images/bg.jpg) no-repeat center center fixed; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    text-align: center;
+    .full-width-section-content {
+      max-width: 1200px;
+    }
+    h2 {
+      .mui-font-style-display-1;
+    }
+
+
+  }
+
+  .murmur-open-source {
+    background-color: @grey-50;
+    text-align: center;
+
+    .full-width-section-content {
+      // max-width: 1200px;
+    }
+    h2 {
+      .mui-font-style-display-1;
+    }
+  }
+
+
+  // open source component
+
+  .murmur-download {
+    background-color: @grey-200;
+    text-align: center;
+
+    h3 {
+      margin: 0;
+      padding: 0;
+      .mui-font-weight-light;
+    }
+
+    .mui-paper-button {
+      margin-top: 32px;
+    }
+
   }
 
 

@@ -3,7 +3,6 @@
 
   .full-width-section-content {
     max-width: 700px;
-    text-align: center;
   }
 
   p {
@@ -13,7 +12,7 @@
     margin: 0;
   }
 
-  .takly-hero {
+  .talkly-hero {
     background-color: @light-blue-600;
     overflow: hidden;
 
@@ -21,6 +20,7 @@
       margin-left: 50%;
       transform: translateX(-50%);
       max-width: 420px;
+      width: 80%;
     }
 
     .tagline {
@@ -55,13 +55,93 @@
   }
 
 
-  .talkly-description {
+  .talkly-intro {
     background-color: @grey-200;
     text-align: center;
   }
 
-  .talkly-download {
 
+  .talkly-features {
+    background-color: @grey-100;
+    text-align: center;
+    .full-width-section-content {
+      // max-width: 1200px;
+    }
+    h2 {
+      .mui-font-style-display-1;
+    }
+  }
+
+  .talkly-pitch {
+    text-align: center;
+    p {
+      color: @dark-white;
+    }
+
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      padding-top: 25px;
+      height: 0;
+      width: 100%;
+
+    }
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+
+
+
+  .talkly-inspiration {
+    background-color: @grey-50;
+    text-align: center;
+
+    .full-width-section-content {
+      // max-width: 1200px;
+    }
+    h2 {
+      .mui-font-style-display-1;
+    }
+  }
+
+  .talkly-users {
+    background-color: @grey-100;
+    text-align: center;
+    .full-width-section {
+      padding: 0;
+    }
+    .full-width-section-content {
+      max-width: 100%;
+    }
+    h2 {
+      .mui-font-style-display-1;
+    }
+  }
+
+  .talkly-mvp {
+    background-color: @grey-100;
+    text-align: center;
+
+    .full-width-section-content {
+      max-width: 1200px;
+
+    }
+
+    h2 {
+      .mui-font-style-display-1;
+    }
+
+  }
+
+// open source component
+
+  .talkly-download {
     background-color: @grey-200;
     text-align: center;
 

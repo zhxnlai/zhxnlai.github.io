@@ -15,8 +15,8 @@ var React = require('react'),
   Paper = mui.Paper;
 
 var features = [{heading: "Tickets Tonight", route: "apps", img:"http://placehold.it/320x320"},
-                {heading: "Talkly", route: "talkly", img:"images/apps/talkly-icon.png"},
-                {heading: "Murmur", route: "murmur", img:"images/apps/murmur-icon.png"},];
+                {heading: "Talkly", route: "talkly", img:"images/projects/talkly/icon.png"},
+                {heading: "Murmur", route: "murmur", img:"images/projects/murmur/icon.png"},];
 
 var AppPage = React.createClass({
   mixins: [Router.Navigation],

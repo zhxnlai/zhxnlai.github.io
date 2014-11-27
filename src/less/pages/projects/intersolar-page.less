@@ -1,43 +1,11 @@
-.talkly-page {
-  background-color: @light-blue-600;
+.intersolar-page {
+
+
+
   overflow: hidden;
-  .svg-logo {
-    margin-left: 50%;
-    transform: translateX(-50%);
-    max-width: 420px;
-  }
-
-  .tagline {
-    margin: 16px auto 0 auto;
-    text-align: center;
-    max-width: 575px;
-
-    h2 {
-      .mui-font-style-title;
-    }
-
-    h1, h2 {
-      color: @dark-white;
-      .mui-font-weight-light;
-    }
-
-    @media @device-large {
-      margin-top: 32px;
-
-      h1 {
-        font-size: 56px;
-      }
-
-      h2 {
-        .mui-font-style-headline;
-        color: @dark-white;
-        .mui-font-weight-light;
-      }
-    }
-  }
-
   .full-width-section-content {
     max-width: 700px;
+    text-align: center;
   }
 
   p {
@@ -46,6 +14,117 @@
     padding: 0;
     margin: 0;
   }
+
+  .intersolar-hero {
+    background: transparent url("images/projects/intersolar/hero.png") 0 0 no-repeat fixed;
+    /*background: url(images/bg.jpg) no-repeat center center fixed; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+
+    overflow: hidden;
+    display: table;
+
+    .tagline {
+      display: table-cell;
+      vertical-align: middle;
+
+      margin: 16px auto 0 auto;
+            // transform: translateY(-50%);
+
+      text-align: center;
+      max-width: 575px;
+
+      h2 {
+        .mui-font-style-title;
+      }
+
+      h1, h2 {
+        color: @dark-white;
+        .mui-font-weight-light;
+      }
+
+      @media @device-large {
+        margin-top: 32px;
+
+        h1 {
+          font-size: 56px;
+        }
+
+        h2 {
+          .mui-font-style-headline;
+          color: @dark-white;
+          .mui-font-weight-light;
+        }
+      }
+    }
+
+  }
+
+  .center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    /*
+    Nope =(
+    margin-left: -25%;
+    margin-top: -25%;
+    */
+
+    /*
+    Yep!
+    */
+    transform: translate(-50%, -50%);
+
+    /*
+    Not even necessary really.
+    e.g. Height could be left out!
+    */
+    width: 40%;
+    height: 50%;
+  }
+
+
+  .tweet-box {
+    text-align: left;
+
+    blockquote.twitter-tweet {
+      background-color: @white;
+      display: inline-block;
+      padding: 16px;
+      margin: 10px 0;
+      max-width: 468px;
+      border: #ddd 1px solid;
+      border-top-color: #eee;
+      border-bottom-color: #bbb;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+      font: bold 14px/18px Helvetica, Arial, sans-serif;
+      color: #000;
+    }
+
+    blockquote.twitter-tweet p {
+      text-align: left;
+      font: normal 18px/24px Georgia, "Times New Roman", Palatino, serif;
+      margin: 0 5px 10px 0;
+      color: black;
+    }
+
+    a {
+      color: black;
+    }
+
+    blockquote.twitter-tweet a[href^="https://twitter.com"] {
+      font-weight: normal;
+      color: #666;
+      font-size: 12px;
+    }
+  }
+
 
 
 }

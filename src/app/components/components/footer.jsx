@@ -21,7 +21,7 @@ var Footer = React.createClass({
     return (
       <div className="footer">
         <a herf="mailto:zhxnlai@gmail.com">zhxnlai@gmail.com</a>
-        <p>© 2010-2014 Zhixuan Lai</p>
+        <p>© 2013-2014 Zhixuan Lai</p>
       </div>
     );
   }

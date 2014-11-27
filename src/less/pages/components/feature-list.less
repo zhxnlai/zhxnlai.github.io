@@ -1,8 +1,5 @@
-
-
 .feature-list {
   .clearfix();
-
 
   * { .ease-out();
   }
@@ -16,7 +13,14 @@
     .mui-font-weight-light;
   }
 
+  .feature-list-feature {
+    width: 100%;
+    margin: 0 auto @desktop-gutter auto;
 
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 
   .feature-list-feature-heading {
     .mui-font-style-title;
@@ -25,16 +29,6 @@
     margin: 0;
     padding: 0;
     line-height: @desktop-keyline-increment;
-  }
-
-  .feature-list-feature {
-    width: 100%;
-    margin: 0 auto @desktop-gutter auto;
-
-
-    &:last-child {
-      margin-bottom: 0;
-    }
   }
 
   .feature-list-feature-image {
@@ -49,22 +43,6 @@
       .clearfix();
       max-width: 906px;
     }
-
-    // .feature-list-feature {
-    //   float: left;
-    //   width: 33%;
-    //   margin-right: 4px;
-    //   margin-bottom: 0;
-    //
-    //   &:first-child {
-    //     margin-left: -2px;
-    //   }
-    //
-    //   &:last-child {
-    //     margin-right: 0;
-    //   }
-    // }
-
   }
 
 }

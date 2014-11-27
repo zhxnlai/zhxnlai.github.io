@@ -9,10 +9,10 @@ FeatureList = require('../components/feature-list.jsx'),
 Headline = require('../components/headline.jsx');
 
 var features = [{heading: "Intersolar", route: "intersolar", img:"http://placehold.it/320x320"},
-                {heading: "Horoscoper", route: "horoscoper", img:"http://placehold.it/320x320"},
-                {heading: "Spacinarium", route: "spacinarium", img:"http://placehold.it/320x320"},
-                {heading: "Timid Turtle", route: "timid-turtle", img:"http://placehold.it/320x320"},
-                {heading: "Trig vs Dots", route: "trig-vs-dots", img:"http://placehold.it/320x320"},
+                {heading: "Horoscoper", route: "horoscoper", img:"images/projects/horoscoper/feature.png"},
+                {heading: "Spacinarium", route: "spacinarium", img:"images/projects/spacinarium/feature-cropped.png"},
+                {heading: "Timid Turtle", route: "timid-turtle", img:"images/projects/timid-turtle/icon.png"},
+                {heading: "Trig vs Dots", route: "trig-vs-dots", img:"images/projects/trig-vs-dots/icon.png"},
                 ];
 
 var GamesPage = React.createClass({
