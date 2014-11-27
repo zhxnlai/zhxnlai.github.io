@@ -16,28 +16,29 @@ Headline = require('../components/headline.jsx');
 // <img className="pure-img-responsive" src="http://thecomputerboys.com/wp-content/uploads/2011/01/datamation-1965-well-dressed-programmer.png"/>
 // </div>
 
+// <div className="l-box pure-u-1-2">
+// <h2 className="mui-font-style-headline">Gadgets</h2>
+// <ul>
+// <li className="mui-font-style-title">ie800</li>
+// <li className="mui-font-style-title">...</li>
+// </ul>
+// </div>
+
 var AboutPage = React.createClass({
   mixins: [Router.Navigation],
   render: function() {
     return (
 
-        <div className="home-page-hero full-page-section ">
+        <div className=" full-page-section ">
           <div className="about-page full-page-section-center-content">
             <Headline headline="About"
             subheadHtml={
-              <p className="mui-font-style-headline">I am a computer science student at UCLA.
-              <br/> I co-founded axcelstudio.
+              <p className="mui-font-style-title">I am a computer science student at UCLA.
+              <br/> I love startup culture. In summer 2014, I co-founded <a href="http://axcelstudio.com">axcelstudio</a>.
               <br/> In my spare time, I cook and code.</p>}/>
             <div className="l-box-lrg-bottom pure-g">
 
 
-              <div className="l-box pure-u-1-2">
-                <h2 className="mui-font-style-headline">Gadgets</h2>
-                <ul>
-                  <li className="mui-font-style-subhead-1">ie800</li>
-                  <li className="mui-font-style-subhead-1">...</li>
-                </ul>
-              </div>
             </div>
           </div>
         </div>

@@ -26,7 +26,7 @@ var HomePage = React.createClass({
     return (
         <div className="home-page-hero full-page-section ">
           <div className="full-page-section-center-content">
-            <Headline headline="Home" subhead="."/>
+            <Headline headline="." subhead="脑补some interactions"/>
           </div>
         </div>
     );

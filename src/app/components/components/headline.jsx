@@ -9,11 +9,11 @@ Paper = mui.Paper;
 var Headline = React.createClass({
   render: function() {
       var subhead = (this.props.subheadHtml ? this.props.subheadHtml :
-        (<p className="mui-font-style-headline">{this.props.subhead}</p>));
+        (<p className="mui-font-style-title">{this.props.subhead}</p>));
       return (
         <div className="headline l-box-lrg-top pure-g">
           <div className="l-box pure-u-1">
-            <h1 className="mui-font-style-display-3">{this.props.headline}</h1>
+            <h1 className="mui-font-style-display-1">{this.props.headline}</h1>
             {subhead}
           </div>
         </div>

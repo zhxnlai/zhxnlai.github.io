@@ -2,6 +2,10 @@ var dest = './build',
 src = './src',
 mui = '../node_modules/material-ui/src';
 
+// TODO: set a flag: gulp-util, env.target, isProduction
+// TODO: ugilify
+// TODO: minify css
+
 module.exports = {
   browserSync: {
     server: {

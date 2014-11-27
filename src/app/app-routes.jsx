@@ -20,18 +20,15 @@ var React = require('react'),
   //
   // Colors = require('./components/pages/css-framework/colors.jsx'),
   // Typography = require('./components/pages/css-framework/typography.jsx'),
-  //
-  // Buttons = require('./components/pages/components/buttons.jsx'),
-  // Dialog = require('./components/pages/components/dialog.jsx'),
-  // DropDownMenu = require('./components/pages/components/drop-down-menu.jsx'),
-  // IconButtons = require('./components/pages/components/icon-buttons.jsx'),
-  // Icons = require('./components/pages/components/icons.jsx'),
-  // Inputs = require('./components/pages/components/inputs.jsx'),
-  // LeftNav = require('./components/pages/components/left-nav.jsx'),
-  // Menus = require('./components/pages/components/menus.jsx'),
-  // Paper = require('./components/pages/components/paper.jsx'),
-  // Switches = require('./components/pages/components/switches.jsx'),
-  // Toolbars = require('./components/pages/components/toolbars.jsx'),
+
+  // projects
+  Talkly = require('./components/pages/projects/talkly.jsx'),
+  Murmur = require('./components/pages/projects/murmur.jsx'),
+  Intersolar = require('./components/pages/projects/intersolar.jsx'),
+  Horoscoper = require('./components/pages/projects/horoscoper.jsx'),
+  Spacinarium = require('./components/pages/projects/spacinarium.jsx'),
+  TimidTurtle = require('./components/pages/projects/timid-turtle.jsx'),
+  TrigVsDots = require('./components/pages/projects/trig-vs-dots.jsx'),
 
   cssFrameworkMenuItems = [
     { route: 'colors', text: 'Colors'},
@@ -61,6 +58,15 @@ var AppRoutes = (
       <Route name="games" handler={Games} />
       <Route name="code" handler={Code} />
       <Route name="about" handler={About} />
+
+      <Route name="talkly" handler={Talkly} />
+      <Route name="murmur" handler={Murmur} />
+      <Route name="intersolar" handler={Intersolar} />
+      <Route name="horoscoper" handler={Horoscoper} />
+      <Route name="spacinarium" handler={Spacinarium} />
+      <Route name="timid-turtle" handler={TimidTurtle} />
+      <Route name="trig-vs-dots" handler={TrigVsDots} />
+
       <Redirect from="*" to="home" />
     </Route>
   // </Routes>

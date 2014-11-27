@@ -10,7 +10,21 @@
 var React = require('react'),
 Router = require('react-router'),
 mui = require('material-ui'),
-Headline = require('../components/headline.jsx');
+Headline = require('../components/headline.jsx'),
+FeatureList = require('../components/feature-list.jsx'),
+Feature = require('../components/feature.jsx');
+
+//<span className="no-wrap">that Implement</span>
+//<Headline headline="Code" subhead="“Software is like sex: it's better when it's free.”-Linus Torvalds" />
+
+//                <p className="mui-font-style-title"><a href="https://github.com/zhxnlai">Checkout my Octocat</a></p>
+
+// <img className="pure-img-responsive" src="https://octodex.github.com/images/dunetocat.png"/>
+
+// pure-u-1 pure-u-sm-1 pure-u-md-1-2 pure-u-xl-1-3
+//  pure-u-1 pure-u-sm-2-3 pure-u-md-1-2
+
+var features = [{heading: "Checkout my Octocat", url: "https://github.com/zhxnlai", img:"https://octodex.github.com/images/dunetocat.png"}];
 
 var CodePage = React.createClass({
 
@@ -19,11 +33,13 @@ var CodePage = React.createClass({
   render: function() {
 
     return (
-        <div className="home-page-hero full-page-section ">
-          <div className="full-page-section-center-content">
+        <div className="full-page-section ">
+          <div className="code full-page-section-center-content">
             <Headline headline="Code"
             subheadHtml={
-              <p className="mui-font-style-headline"><a href="https://github.com/zhxnlai">A link to my github</a></p>}/>
+            <p className="mui-font-style-title">“Software is like sex: it's better when it's free.”<span className="no-wrap"> - Linus Torvalds</span></p>}/>
+            <FeatureList features={features}/>
+
           </div>
         </div>
     );

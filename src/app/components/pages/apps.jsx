@@ -7,17 +7,16 @@ var React = require('react'),
   mui = require('material-ui'),
   Ripple = mui.Ripple,
   DOM = require('../utils/dom.js'),
-  Feature = require('../components/feature.jsx'),
-  Catelog = require('../components/catelog.jsx'),
+  FeatureList = require('../components/feature-list.jsx'),
   Headline = require('../components/headline.jsx'),
   $ = require('jquery'),
   Velocity = require('velocity-animate'),
   PaperButton = mui.PaperButton,
   Paper = mui.Paper;
 
-var features = [{heading: "Tickets Tonight", route: "home", img:"http://placehold.it/320x320"},
-                {heading: "Talkly", route: "home", img:"images/apps/talkly-icon.png"},
-                {heading: "Murmur", route: "home", img:"images/apps/murmur-icon.png"},];
+var features = [{heading: "Tickets Tonight", route: "apps", img:"http://placehold.it/320x320"},
+                {heading: "Talkly", route: "talkly", img:"images/apps/talkly-icon.png"},
+                {heading: "Murmur", route: "murmur", img:"images/apps/murmur-icon.png"},];
 
 var AppPage = React.createClass({
   mixins: [Router.Navigation],
@@ -25,8 +24,11 @@ var AppPage = React.createClass({
     return (
       <div className="home-page-hero full-page-section ">
         <div className="full-page-section-center-content">
-            <Headline headline="Apps" subhead="Social networking apps."/>
-            <Catelog features={features}/>
+            <Headline headline="Apps"
+            subheadHtml={
+              <p className="mui-font-style-title">App is dead, <span className="no-wrap"> long live the service.</span></p>}/>
+
+            <FeatureList features={features}/>
           </div>
       </div>
     );
