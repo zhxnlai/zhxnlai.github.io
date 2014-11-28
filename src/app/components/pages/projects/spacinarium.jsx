@@ -134,7 +134,7 @@ var Spacinarium = React.createClass({
       <img className="pure-img-responsive" src="images/projects/spacinarium/opening.jpg"/>
       </div>
       <div className="pure-u-1">
-      <img className="pure-img-responsive" src="images/projects/spacinarium/demo-para-2.jpg"/>
+      <img className="pure-img-responsive" src="images/projects/spacinarium/demo-para-2_mini.jpg"/>
       </div>
       <div className="pure-u-1">
       <img className="pure-img-responsive" src="images/projects/spacinarium/demo.jpg"/>
