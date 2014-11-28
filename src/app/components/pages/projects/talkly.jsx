@@ -161,15 +161,32 @@ var Talkly = React.createClass({
                 <div className={appThumbnailsClassName}><img className="pure-img-responsive" src="images/projects/talkly/mvp/mvp2/settings.png"/></div>
                 <div className={appThumbnailsClassName}><img className="pure-img-responsive" src="images/projects/talkly/mvp/comparison.png"/></div>
             </div>
-            <div className="l-box pure-u-1 ">
+            <div className=" l-box pure-u-1 ">
+              <div className="smaller-width pure-u-1">
               <p>This is what became reality in two weeks.</p>
+              </div>
             </div>
 
             <div className="l-box pure-u-1 ">
-            <h2 className="mui-font-style-headline">Development</h2>
+            <h2 className="mui-font-style-headline">Open Source</h2>
             </div>
-            <div className="l-box pure-u-1 ">
-            <p>ZLPeoplePickerController</p>
+
+            <div className={appThumbnailsClassName}>
+            <img className="pure-img-responsive" src="images/projects/talkly/inspiration/whatsapp-4.png"/>
+            </div>
+            <div className={appThumbnailsClassName}>
+            <img className="pure-img-responsive" src="https://github.com/zhxnlai/ZLPeoplePickerViewController/raw/master/Previews/emailsPreview.gif"/>
+            </div>
+
+
+            <div className=" l-box pure-u-1 ">
+            <div className="smaller-width pure-u-1">
+            <p>The built in addresss book UI on iOS does not handle well multiple languages (even Whatsapp doesn't).
+            So I created ZLPeoplePickerViewController, a replacement for ABPeoplePickerNavigationController that supports UILocalized​Indexed​Collation</p>
+            </div>
+            </div>
+
+            <div className="smaller-width l-box pure-u-1 ">
             </div>
 
 

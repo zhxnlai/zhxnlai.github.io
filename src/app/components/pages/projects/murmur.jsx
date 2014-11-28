@@ -115,7 +115,7 @@ var Murmur = React.createClass({
           </div>
           </div>
           <div className="l-box pure-u-1 ">
-          <p>We opensourced some of our components and people love it. ZLSwipeableView stayed trending on github for two days.</p>
+          <p>We opensourced some of our components and people loved it. ZLSwipeableView stayed trending on github for two days.</p>
           </div>
         </div>
         </div>

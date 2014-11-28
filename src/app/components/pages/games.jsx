@@ -8,7 +8,7 @@ mui = require('material-ui'),
 FeatureList = require('../components/feature-list.jsx'),
 Headline = require('../components/headline.jsx');
 
-var features = [{heading: "Intersolar", route: "intersolar", img:"http://placehold.it/320x320"},
+var features = [{heading: "Intersolar", route: "intersolar", img:"images/projects/intersolar/feature-cropped.png"},
                 {heading: "Horoscoper", route: "horoscoper", img:"images/projects/horoscoper/feature.png"},
                 {heading: "Spacinarium", route: "spacinarium", img:"images/projects/spacinarium/feature-cropped.png"},
                 {heading: "Timid Turtle", route: "timid-turtle", img:"images/projects/timid-turtle/icon.png"},
