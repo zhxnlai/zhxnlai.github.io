@@ -1,40 +1,5 @@
-.talkly-page {
-  background-color: @light-blue-600;
-  overflow: hidden;
-  .svg-logo {
-    margin-left: 50%;
-    transform: translateX(-50%);
-    max-width: 420px;
-  }
+.spacinarium-page {
 
-  .tagline {
-    margin: 16px auto 0 auto;
-    text-align: center;
-    max-width: 575px;
-
-    h2 {
-      .mui-font-style-title;
-    }
-
-    h1, h2 {
-      color: @dark-white;
-      .mui-font-weight-light;
-    }
-
-    @media @device-large {
-      margin-top: 32px;
-
-      h1 {
-        font-size: 56px;
-      }
-
-      h2 {
-        .mui-font-style-headline;
-        color: @dark-white;
-        .mui-font-weight-light;
-      }
-    }
-  }
 
   .full-width-section-content {
     max-width: 700px;
@@ -45,6 +10,172 @@
     .mui-font-weight-light;
     padding: 0;
     margin: 0;
+  }
+
+  .spacinarium-hero {
+    background: transparent url("images/projects/spacinarium/top-down-shooting.png") 0 0 no-repeat fixed;
+    /*background: url(images/bg.jpg) no-repeat center center fixed; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+
+    overflow: hidden;
+    display: table;
+
+    .tagline {
+      display: table-cell;
+      vertical-align: middle;
+      text-shadow: 0px 1px 1px @dark-black;
+
+      margin: 16px auto 0 auto;
+      // transform: translateY(-50%);
+
+      text-align: center;
+      max-width: 575px;
+
+      h2 {
+        .mui-font-style-title;
+      }
+
+      h1, h2 {
+        color: @dark-white;
+        .mui-font-weight-light;
+      }
+
+      @media @device-large {
+        margin-top: 32px;
+
+        h1 {
+          font-size: 56px;
+        }
+
+        h2 {
+          .mui-font-style-headline;
+          color: @dark-white;
+          .mui-font-weight-light;
+        }
+      }
+    }
+
+  }
+
+  .spacinarium-intro {
+    background-color: @cyan-200;
+    text-align: center;
+    p {
+      color: @grey-700;
+    }
+  }
+
+  .spacinarium-video {
+    background-color: @green-200;
+
+    text-align: center;
+    p {
+      color: @grey-700;
+    }
+
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      padding-top: 25px;
+      height: 0;
+      width: 100%;
+
+    }
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .spacinarium-features {
+    background-color: @amber-200;
+    text-align: center;
+
+    .full-width-section-content {
+      // max-width: 1200px;
+    }
+    h2 {
+      .mui-font-style-display-1;
+    }
+    h2, p {
+      color: @grey-700;
+    }
+  }
+
+  .spacinarium-inspiration {
+    background-color: @grey-100;
+    text-align: center;
+    .full-width-section-content {
+      // max-width: 1200px;
+    }
+    h2 {
+      .mui-font-style-display-1;
+    }
+  }
+
+  .spacinarium-hack-sc {
+    background-color: @pink-200;
+
+    text-align: center;
+
+    h2 {
+      .mui-font-style-display-1;
+    }
+
+    h2, p {
+      color: @dark-white;
+    }
+
+  }
+
+
+
+  .spacinarium-gallery {
+    background-color: @dark-black;
+    text-align: center;
+
+    img {
+      // not sure why it is needed but solves the problem in chrome
+      margin-bottom: -6px;
+    }
+    h2, p {
+      color: @dark-white;
+    }
+
+    .full-width-section {
+      padding: 0;
+    }
+    .full-width-section-content {
+      max-width: 100%;
+    }
+    h2 {
+      .mui-font-style-display-1;
+    }
+  }
+
+  .spacinarium-download {
+    background-color: @grey-200;
+    text-align: center;
+    text-shadow: none;
+
+    h3 {
+      margin: 0;
+      padding: 0;
+      .mui-font-weight-light;
+    }
+
+    .mui-paper-button {
+      margin-top: 32px;
+    }
+
   }
 
 

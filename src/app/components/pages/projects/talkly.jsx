@@ -129,23 +129,7 @@ var Talkly = React.createClass({
         </div>
         </div>
 
-        <div className="talkly-users ">
-        <div className="pure-u-1 full-width-section ">
-        <div className="full-width-section-content ">
 
-        <div className="l-box pure-u-1 ">
-        <h2 className="mui-font-style-headline">Talking to our users</h2>
-        </div>
-        <div className="pure-u-1-2">
-        <img className="pure-img-responsive" src="images/projects/talkly/users/table.jpg"/>
-        </div>
-        <div className="pure-u-1-2">
-        <img className="pure-img-responsive" src="images/projects/talkly/users/user.jpg"/>
-        </div>
-
-        </div>
-        </div>
-        </div>
 
         <div className="talkly-mvp pure-u-1 full-width-section ">
           <div className="full-width-section-content ">
@@ -202,7 +186,7 @@ var Talkly = React.createClass({
           <PaperButton
             type={PaperButton.Types.RAISED}
             label="AppStore"
-            href="https://github.com/callemall/material-ui" />
+            href="https://itunes.apple.com/us/app/talkly/id914798579?ls=1&mt=8" />
           </div>
         </div>
 

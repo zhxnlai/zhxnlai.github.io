@@ -26,7 +26,7 @@ var Murmur = React.createClass({
             <div className="tagline">
               <h1 className="brand-name">Murmur</h1>
               <h2 className="mui-font-style-headline">
-              Share Your Secrets With Voice.
+              Voice Your Secrets.
               </h2>
             </div>
         </div>
@@ -91,6 +91,24 @@ var Murmur = React.createClass({
           </div>
         </div>
 
+        <div className="talkly-users ">
+        <div className="pure-u-1 full-width-section ">
+        <div className="full-width-section-content ">
+
+        <div className="l-box pure-u-1 ">
+        <h2 className="mui-font-style-headline">Talking to users</h2>
+        </div>
+        <div className="pure-u-1-2">
+        <img className="pure-img-responsive" src="images/projects/talkly/users/table.jpg"/>
+        </div>
+        <div className="pure-u-1-2">
+        <img className="pure-img-responsive" src="images/projects/talkly/users/user.jpg"/>
+        </div>
+
+        </div>
+        </div>
+        </div>
+
         <div className="murmur-open-source pure-u-1 full-width-section ">
         <div className="full-width-section-content ">
           <div className="l-box pure-u-1 ">
@@ -128,7 +146,7 @@ var Murmur = React.createClass({
           <PaperButton
             type={PaperButton.Types.RAISED}
             label="AppStore"
-            href="https://github.com/callemall/material-ui" />
+            href="https://itunes.apple.com/us/app/murmur-voice-your-secrets/id908531310?ls=1&mt=8" />
           </div>
         </div>
 

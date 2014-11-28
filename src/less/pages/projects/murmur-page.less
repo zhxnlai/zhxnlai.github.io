@@ -120,16 +120,39 @@
     background-size: cover;
 
     text-align: center;
+    text-shadow: 0px 1px 1px @dark-black;
+
     .full-width-section-content {
       max-width: 1200px;
+    }
+
+
+    h2 {
+      .mui-font-style-display-1;
+    }
+    p, h2 {
+      color: @dark-white;
+    }
+
+  }
+
+  .talkly-users {
+    background-color: @grey-100;
+    text-align: center;
+    .full-width-section {
+      padding: 0;
+    }
+    .full-width-section-content {
+      max-width: 100%;
     }
     h2 {
       .mui-font-style-display-1;
     }
-
-
+    img {
+      // not sure why it is needed but solves the problem in chrome
+      margin-bottom: -6px;
+    }
   }
-
   .murmur-open-source {
     background-color: @grey-50;
     text-align: center;

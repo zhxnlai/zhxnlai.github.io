@@ -62,7 +62,11 @@ var Intersolar = React.createClass({
         <div className="intersolar-features pure-u-1 full-width-section ">
         <div className=" full-width-section-content">
           <div className="l-box pure-u-1 ">
-            <h2>Hands free virtual reality. </h2>
+
+          <h2>Hands free virtual reality. </h2>
+          </div>
+
+          <div className="l-box pure-u-1 ">
             <p>We used the Myo by Thalmic Labs as gesture control to control the movement
             of the camera and the time travel of the entire galaxy.
             </p>
@@ -101,6 +105,11 @@ var Intersolar = React.createClass({
 
           <div className="l-box pure-u-1 ">
           <h2>Having fun at HackSC. </h2>
+          </div>
+          
+
+          <div className="l-box pure-u-1 ">
+
           <p>Intersolar was made at HackSC fall 2014.
           </p>
           </div>
@@ -158,7 +167,7 @@ var Intersolar = React.createClass({
         <div className="intersolar-download pure-u-1 full-width-section">
         <div className="full-width-section-content">
         <h3>
-        What to learn more about Intersolar? Find us <span className="no-wrap"> at Challenge Post.</span>
+        Want to learn more about Intersolar? Find us <span className="no-wrap"> at Challenge Post.</span>
         </h3>
         <PaperButton
         type={PaperButton.Types.RAISED}
