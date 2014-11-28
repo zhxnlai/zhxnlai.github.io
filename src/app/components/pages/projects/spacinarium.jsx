@@ -38,6 +38,10 @@ var Spacinarium = React.createClass({
       <div className="spacinarium-video pure-u-1 full-width-section ">
       <div className="full-width-section-content ">
       <div className="l-box pure-u-1 ">
+      <p>TODO: 3d model viewer for city and paper plane.</p>
+      </div>
+
+      <div className="l-box pure-u-1 ">
       <div className="video-wrapper">
       <iframe width="560" height="315" src="//www.youtube.com/embed/Js9WM8MzHVE" frameBorder="0" allowFullScreen></iframe>      </div>
       </div>
