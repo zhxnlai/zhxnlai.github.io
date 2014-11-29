@@ -38,7 +38,7 @@ var Intersolar = React.createClass({
         <div className="full-width-section-content ">
         <div className="l-box pure-u-1 ">
         <div className="video-wrapper">
-        <iframe height="360" width="640" frameBorder="0" src="http://www.magisto.com/embed/bENMKkQXHG1oWx1iCzE?l=vem&o=w&c=b"></iframe>
+        <iframe height="360" width="640" frameBorder="0" src="//www.magisto.com/embed/bENMKkQXHG1oWx1iCzE?l=vem&o=w&c=b"></iframe>
         </div>
         </div>
         <div className="l-box pure-u-1 ">
