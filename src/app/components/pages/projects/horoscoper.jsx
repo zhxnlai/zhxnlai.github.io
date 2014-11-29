@@ -88,9 +88,9 @@ var Horoscoper = React.createClass({
         </div>
 
         <div className="l-box pure-u-1 ">
-        <p>Horoscoper was made at HackUCI spring 2014. We are the winner of Top Ten and Best VR Hack.
+        <p>Horoscoper was made at <span className="no-wrap">HackUCI spring 2014</span>. We are the winner of <span className="no-wrap">Top Ten</span> and <span className="no-wrap">Best VR Hack</span>.
         </p>
-        
+
         </div>
 
         </div>

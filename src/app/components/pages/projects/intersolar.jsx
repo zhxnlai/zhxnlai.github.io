@@ -5,12 +5,8 @@
 var React = require('react'),
 Router = require('react-router'),
 mui = require('material-ui'),
-Ripple = mui.Ripple,
-DOM = require('../../utils/dom.js'),
-Feature = require('../../components/feature.jsx'),
 Headline = require('../../components/headline.jsx'),
-PaperButton = mui.PaperButton,
-Paper = mui.Paper;
+PaperButton = mui.PaperButton;
 
 var Intersolar = React.createClass({
   mixins: [Router.Navigation],
@@ -30,17 +26,10 @@ var Intersolar = React.createClass({
 
         <div className="intersolar-intro pure-u-1 full-width-section ">
         <p className=" full-width-section-content">
-        Inspired by the movie <a href="http://www.interstellarmovie.net/">Interstellar</a>, we created this virtual solar
-         system within the Oculus Rift. Many people dream of traveling between
-          planet and galaxy, but the reality cannot give them that opportunity.
-           Oculus Rift provides a perfect immersing platform for this virtual reality.
-           <br/><br/>
-        We used the Myo by Thalmic Labs as gesture control to control the movement
-        of the camera and the time travel of the entire galaxy. Starting with
-        a view of the solar system in the galaxy, users can travel to a planet
-        and switch their view to the stars instead of the solar system.
-        A laser beam is also displayed to help the users to distinguish which
-        constellations they are looking at.
+        Inspired by the movie <a href="http://www.interstellarmovie.net/">Interstellar</a>,
+        we created a virtual solar system within the Oculus Rift. The work was based on
+        our last hack, Horoscoper. We enhanced the graphic and keeped the multiplayer feature.
+        Players can experience the stunning view of the entire solar system as well as that on any planet.
         </p>
         </div>
 
@@ -53,7 +42,7 @@ var Intersolar = React.createClass({
         </div>
         </div>
         <div className="l-box pure-u-1 ">
-        <p>See our hack at ChallengePost.</p>
+        <p>See our hack at <a href="http://challengepost.com/software/intersolar">ChallengePost</a>.</p>
         </div>
         </div>
         </div>
@@ -63,12 +52,11 @@ var Intersolar = React.createClass({
         <div className=" full-width-section-content">
           <div className="l-box pure-u-1 ">
 
-          <h2>Hands free virtual reality. </h2>
+          <h2>Hands free virtual reality</h2>
           </div>
 
           <div className="l-box pure-u-1 ">
-            <p>We used the Myo by Thalmic Labs as gesture control to control the movement
-            of the camera and the time travel of the entire galaxy.
+            <p>We used Myo from Thalmic Labs to control the space and time.
             </p>
           </div>
 
@@ -104,9 +92,9 @@ var Intersolar = React.createClass({
           <div className=" full-width-section-content">
 
           <div className="l-box pure-u-1 ">
-          <h2>Having fun at HackSC. </h2>
+          <h2>Having fun at HackSC </h2>
           </div>
-          
+
 
           <div className="l-box pure-u-1 ">
 
@@ -120,6 +108,8 @@ var Intersolar = React.createClass({
           <p><a href="https://twitter.com/hashtag/myo?src=hash">#myo</a> +
           <a href="https://twitter.com/oculus">@oculus</a> + astronomy =
           Intersolar, a hack that lets you zoom through the solar system!
+          <br/>
+
           <a href="https://twitter.com/hashtag/HackSC?src=hash">#HackSC</a>
           <a href="http://t.co/zBeISl8Uhs">pic.twitter.com/zBeISl8Uhs</a></p>
           <div className="author">&mdash; HackSC (@gohacksc) <a href="https://twitter.com/gohacksc/status/531530456252952577">November 9, 2014</a>

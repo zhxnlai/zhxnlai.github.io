@@ -33,7 +33,7 @@ var AboutPage = React.createClass({
           <div className="about-page full-page-section-center-content">
             <Headline headline="About"
             subheadHtml={
-              <p className="mui-font-style-title">I am a computer science student at UCLA.
+              <p className="mui-font-style-title">I am a third-year computer science student at UCLA.
               <br/> I love startup culture and in summer 2014, I co-founded <a href="http://axcelstudio.com">axcelstudio</a>.
               <br/> In my spare time, I cook and code.</p>}/>
             <div className="l-box-lrg-bottom pure-g">

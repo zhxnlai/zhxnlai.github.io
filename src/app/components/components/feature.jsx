@@ -26,7 +26,7 @@ var Feature = React.createClass({
       <Paper className="feature-list-feature" zDepth={this.state.zDepth}
       onMouseOver={this._onMouseOver} onMouseOut={this._onMouseOut} onClick={this._onClick}>
       <h3 className="feature-list-feature-heading">{this.props.heading}</h3>
-      {imgWrapper}
+      <div className="feature-list-img-wrapper">{imgWrapper}</div>
       </Paper>
     );
   },

@@ -15,6 +15,7 @@ var source       = require('vinyl-source-stream');
 var config       = require('../config').browserify;
 var uglify = require('gulp-uglify');
 var streamify = require('gulp-streamify');
+var gutil = require('gulp-util');
 
 gulp.task('browserify', function(callback) {
 
@@ -46,7 +47,9 @@ gulp.task('browserify', function(callback) {
         // desired output filename here.
         .pipe(source(bundleConfig.outputName))
         // uglify
-        .pipe(streamify(uglify()))
+        // .pipe(streamify(uglify()))
+        .pipe(gutil.env.type === 'production' ? streamify(uglify()) : gutil.noop())
+        
         // Specify the output destination
         .pipe(gulp.dest(bundleConfig.dest))
         .on('end', reportFinished);

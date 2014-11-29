@@ -46,7 +46,7 @@ var Spacinarium = React.createClass({
       <iframe width="560" height="315" src="//www.youtube.com/embed/Js9WM8MzHVE" frameBorder="0" allowFullScreen></iframe>      </div>
       </div>
       <div className="l-box pure-u-1 ">
-      <p>See our hack at ChallengePost.</p>
+      <p>See our hack at <a href="http://challengepost.com/software/spacinarium">ChallengePost</a>.</p>
       </div>
       </div>
       </div>
@@ -60,7 +60,7 @@ var Spacinarium = React.createClass({
       </div>
 
       <div className="l-box pure-u-1 ">
-      <p>I started experimenting with AR in Spring break.
+      <p>I started experimenting with AR in Spring break. I had the idea of combining it with tower defend, one of my favorite game genres. The results turned out to be promising.
       </p>
       </div>
 
@@ -73,7 +73,7 @@ var Spacinarium = React.createClass({
       </div>
 
       <div className="l-box pure-u-1 ">
-      <p >The first version.
+      <p >The first version, towers ready.
       </p>
       </div>
 
@@ -85,7 +85,7 @@ var Spacinarium = React.createClass({
       </div>
 
       <div className="l-box pure-u-1 ">
-      <p >Better, with a spaceship.
+      <p >Better, a spaceship with attitude control.
       </p>
       </div>
 
@@ -98,7 +98,7 @@ var Spacinarium = React.createClass({
       </div>
 
       <div className="l-box pure-u-1 ">
-      <p >Now you can attack the towers.
+      <p >Now you can even attack the towers.
       </p>
       </div>
 
@@ -115,7 +115,7 @@ var Spacinarium = React.createClass({
 
       <div className="l-box pure-u-1 ">
 
-      <p>Spacinarium was made at LAHacks Spring 2014. We are the winner of Daqri Grand Price.
+      <p>Spacinarium was made at <span className="no-wrap">LAHacks Spring 2014</span>. We are the winner of <span className="no-wrap">Daqri Grand Price</span>.
       </p>
       </div>
 

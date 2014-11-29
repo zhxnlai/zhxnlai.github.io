@@ -1,3 +1,54 @@
+.master {
+  z-index: 1;
+
+  background-color: @primary-1-color;
+  overflow: hidden;
+  min-height: 100%;
+  min-width: 100vw;
+
+  .webgl-globe {
+    display: block;
+    -webkit-transition: opacity 5s ease-out;
+    opacity: 1;
+
+
+    .container {
+      position: absolute; right: 0; bottom: 0;
+      min-width: 100%; min-height: 100%;
+      width: auto; height: auto;
+      z-index: 0;
+    }
+
+    .year {
+      font: 16px Georgia;
+      line-height: 26px;
+      height: 30px;
+      text-align: center;
+      float: left;
+      width: 90px;
+      color: rgba(255, 255, 255, 0.4);
+
+      cursor: pointer;
+      -webkit-transition: all 0.1s ease-out;
+    }
+
+    .year:hover, .year.active {
+      font-size: 23px;
+      color: #fff;
+    }
+
+  }
+  .isHidden {
+    display: none;
+    -webkit-transition: opacity 5s ease-out;
+    opacity: 0;
+
+  }
+
+}
+
+
+// CSSTransition
 .example-enter {
   position: absolute;
   opacity: 0.3;
@@ -7,16 +58,14 @@
   transition-timing-function: ease;
   // -webkit-transform: translate3d(0,-100%,0);
   // z-index: 100;
-  }
+}
 
 .example-enter.example-enter-active {
-    // -webkit-transform: translate3d(0,0,0);
-    opacity: 1;
-
+  // -webkit-transform: translate3d(0,0,0);
+  opacity: 1;
 }
 
 .example-leave {
-
   position: absolute;
 
   transition-duration: .3s;
@@ -29,18 +78,7 @@
 .example-leave.example-leave-active {
   // -webkit-transform: translate3d(0,15%,0);
   opacity: 0.01;
-   // opacity: 0.01;
+  // opacity: 0.01;
   // transform: translateY(-100%);
   // animation: transform .6s  ease ;
-
-
-}
-
-
-.master {
-  background-color: @primary-1-color;
-  overflow: hidden;
-  min-height: 100%;
-  min-width: 100vw;
-
 }

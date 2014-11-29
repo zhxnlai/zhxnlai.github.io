@@ -34,7 +34,8 @@ var Murmur = React.createClass({
         <div className="murmur-intro pure-u-1 full-width-section ">
         <div className="full-width-section-content ">
         <h2 className="l-box">A voice-based anonymous social network. </h2>
-        <p className="l-box">We realize that every one has stressful feelings and secrets hard to share with people around, but internally we crave for a release and understanding from others. Murmur brings a new dimension to this confessional experience with voice. When you share your stories, your feelings and your secrets with Murmur, it not only conveys the content, but also the emotions, feelings, and even cultures behind. It brings an intimacy and humanity to the communication and help those who truly need.
+        <p className="l-box">We realize that every one has stressful feelings and secrets hard to share with people around, but internally we crave for a release and understanding from others.
+        Murmur brings a new dimension to this confessional experience with voice. When you share your stories, your feelings and your secrets with Murmur, it not only conveys the content, but also the emotions, feelings, and even cultures behind. It brings an intimacy and humanity to the communication and help those who truly need.
         </p>
         </div>
         </div>
@@ -68,7 +69,7 @@ var Murmur = React.createClass({
         <img className="pure-img-responsive" src="images/projects/murmur/v2/editting.png"/>
         </div>
         <div className="l-box pure-u-1">
-        <p>We analyize your voice and pickup keywords. Select a color for your mood.
+        <p>We analyize your voice and pickup keywords. All you need to do is to select a color for your mood.
         </p>
         </div>
         </div>

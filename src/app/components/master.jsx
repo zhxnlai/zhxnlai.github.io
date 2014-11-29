@@ -9,6 +9,7 @@ var React = require('react'),
   Menu = mui.Menu,
   Header = require('./components/header.jsx'),
   Footer = require('./components/footer.jsx'),
+  WebGLGlobe = require('./globe/webgl-globe.jsx'),
   IconButton = mui.IconButton;
 
   var ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
@@ -18,17 +19,23 @@ var React = require('react'),
   var pageTitles = ["home", "apps", "games", "code", "about"];
   var pageIcons = ["action-home", "hardware-phone-iphone", "hardware-gamepad", "mui-icon-github", "action-info-outline"];
 
+  // <div className={"webgl-globe "+globeClassName}>
+  // <WebGLGlobe />
+  // </div>
+
 var Master = React.createClass({
   mixins: [Router.State],
 
   render: function() {
-    console.log(this.getPath())
+    var globeClassName = this.getPath()=="/home" ? "": "isHidden";
+    console.log(this.getPath()+" classname: "+globeClassName)
+
     return (
       <AppCanvas className="master" predefinedLayout={0}>
         <Header pageTitles={pageTitles} pageIcons={pageIcons}/>
-        <ReactCSSTransitionGroup transitionName="example">
-          <RouteHandler key={this.getPath()} />
-        </ReactCSSTransitionGroup>
+          <ReactCSSTransitionGroup transitionName="example">
+            <RouteHandler key={this.getPath()} />
+          </ReactCSSTransitionGroup>
         <Footer />
       </AppCanvas>
     );

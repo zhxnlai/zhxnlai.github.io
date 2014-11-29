@@ -34,7 +34,7 @@ var TimidTurtle = React.createClass({
         <div className="timid-turtle-intro pure-u-1 full-width-section ">
         <div className=" full-width-section-content">
         <p>
-        Timid Turtle is a mobile arcade game, inspired by another popular game Flappy Bird. The philosophy of these games is to create very simple controls but extremely difficult game settings. The contrast between simplicity and difficulty attracts users to keep playing.
+        Timid Turtle is a mobile arcade game inspired by Flappy Bird. The philosophy of these games is to create very simple controls but extremely difficult game settings. The contrast between simplicity and difficulty attracts users to keep playing.
 
 
         </p>
@@ -88,12 +88,22 @@ var TimidTurtle = React.createClass({
         <div className="timid-turtle-download pure-u-1 full-width-section">
           <div className="full-width-section-content">
           <h3>
-            Love this <span className="no-wrap">awesome idea?</span> <span className="no-wrap">Download at Appstore.</span>
+            Love <span className="no-wrap">Timid Turtle?</span> <span className="no-wrap">Download it at Appstore.</span>
           </h3>
-          <PaperButton
+          <ul>
+          <li><PaperButton
             type={PaperButton.Types.RAISED}
             label="AppStore"
-            href="https://itunes.apple.com/us/app/timid-turtle/id822453884?ls=1&mt=8" />
+            href="https://itunes.apple.com/us/app/timid-turtle/id822453884?ls=1&mt=8" /></li>
+          <li><PaperButton
+          type={PaperButton.Types.RAISED}
+          label="Google Play"
+          href="https://play.google.com/store/apps/details?id=com.axcel.timidturtle" /></li>
+          <li><PaperButton
+          type={PaperButton.Types.RAISED}
+          label="Amazon AppStore"
+            href="http://www.amazon.com/Zhixuan-Lai-Timid-Turtle/dp/B00JE5A70U/" /></li>
+          </ul>
           </div>
         </div>
 
