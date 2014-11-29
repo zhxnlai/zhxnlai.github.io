@@ -9,7 +9,6 @@ var React = require('react'),
   Menu = mui.Menu,
   Header = require('./components/header.jsx'),
   Footer = require('./components/footer.jsx'),
-  WebGLGlobe = require('./globe/webgl-globe.jsx'),
   IconButton = mui.IconButton;
 
   var ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
@@ -28,7 +27,6 @@ var Master = React.createClass({
 
   render: function() {
     var globeClassName = this.getPath()=="/home" ? "": "isHidden";
-    console.log(this.getPath()+" classname: "+globeClassName)
 
     return (
       <AppCanvas className="master" predefinedLayout={0}>
