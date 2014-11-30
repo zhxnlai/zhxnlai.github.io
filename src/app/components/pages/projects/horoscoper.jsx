@@ -25,8 +25,10 @@ var Horoscoper = React.createClass({
 
         <div className="horoscoper-intro pure-u-1 full-width-section ">
         <div className="l-box full-width-section-content">
+        <p>Horoscoper is a collaboration between  <span className="no-wrap">Weijian Lin</span>, <span className="no-wrap">Zhixuan Lai</span>, <span className="no-wrap">Zhetian Sun</span> and <span className="no-wrap">Zhengliang Wu</span>.  </p>
+
         <p>
-        Horoscoper is a mini VR planetarium app for Oculus Rift. Powered by Unity3d game engine and headtracking technology, it deliveries an amazing stargazing experience in virtual reality.
+        It is a mini VR planetarium app for Oculus Rift. Powered by Unity3d game engine and headtracking technology, it deliveries an amazing stargazing experience in virtual reality.
         </p>
         </div>
         </div>

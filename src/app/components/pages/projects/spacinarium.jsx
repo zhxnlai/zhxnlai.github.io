@@ -29,9 +29,14 @@ var Spacinarium = React.createClass({
       </div>
 
       <div className="spacinarium-intro pure-u-1 full-width-section ">
-      <p className=" full-width-section-content">
-      Spacenarium is a Hackthon project. It is a multi-player space-shooting game, using Augmented Reality technology. A virtual arena is contracted and shared on several Apple devices, when they are aiming at the same flat area. Players can navigate their avatars by moving their devices around the flat area, and shoot each other in the virtual world.
+      <div className=" full-width-section-content">
+      <p>Spacenarium is a collaboration between <span className="no-wrap">Yakun Chen</span>, <span className="no-wrap">Weijian Lin</span>, <span className="no-wrap">Zhixuan Lai</span> and <span className="no-wrap">Lingyu Zhang</span>.  </p>
+      <p>
+      It is a multi-player space-shooting game for iOS made with Augmented Reality technology.
+      The game constructs a virtual arena on a real world image target (e.g., a poster, an iPad screen displaying still images).
+      Players can then navigate their avatars by moving their devices around the image target and shoot each other in the virtual world.
       </p>
+      </div>
       </div>
 
 
@@ -60,7 +65,7 @@ var Spacinarium = React.createClass({
       </div>
 
       <div className="l-box pure-u-1 ">
-      <p>I started experimenting with AR in Spring break. I had the idea of combining it with tower defend, one of my favorite game genres. The results turned out to be promising.
+      <p>I started experimenting with AR in Spring break. I had the idea of combining it with tower defend, one of my favorite game genres. The results turned out to have lots of potenital.
       </p>
       </div>
 
