@@ -28,9 +28,9 @@ var Intersolar = React.createClass({
         <div className=" full-width-section-content">
         <p>Intersolar is a collaboration between <span className="no-wrap">Zhixuan Lai</span>, <span className="no-wrap">Yanzhe Liu</span>, <span className="no-wrap">Zhetian Sun</span> and <span className="no-wrap">Lingyu Zhang</span>.  </p>
         <p>Inspired by the movie <a href="http://www.interstellarmovie.net/">Interstellar</a>,
-        we created a virtual solar system within the Oculus Rift. The work was based on
-        our last hack, Horoscoper. We enhanced the graphic and keeped the multiplayer feature.
-        Players can experience the stunning view of the entire solar system as well as that on any planet.
+        we created a virtual solar system within the Oculus Rift. Based on the work from
+        our last hack, Horoscoper, we enhanced the graphic and added a solar system.
+        Players can now experience the stunning view of the entire solar system as well as that of any planet.
         </p>
         </div>
         </div>
