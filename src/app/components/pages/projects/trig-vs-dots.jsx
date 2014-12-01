@@ -34,6 +34,10 @@ var TrigVsDots = React.createClass({
         <div className="trig-vs-dots-intro pure-u-1 full-width-section ">
         <div className=" full-width-section-content">
         <p>
+        Trig vs Dots is a collaboration between <span className='no-wrap'>Zhixuan Lai</span> and <span className='no-wrap'><a href='http://www.renzeyu.com/'>Zeyu Ren</a></span>.
+        </p>
+        <br/>
+        <p>
         Prepare yourself for the breath-taking challenge: Tilt your phone to fly the trig, our last-one-standing hero, to dodge myriad of hostile dots come from all directions. Keep yourself alive as long as you are capable of.
         <br/><br/>Train your reflexivity as you make your way out of every critical and impossible situation.
         <br/><br/>Simple rule, tons of fun. Reflexion difference among people can narrow down to 1 millisecond. Prove yourself are better by beating your friend's time record.
