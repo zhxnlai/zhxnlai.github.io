@@ -2,4 +2,10 @@ Zhxnlai.github.io
 ===
 
 Technologies:
-- less, browserify + gulp -> client side css, js
+gulp
+  browserify
+  many more
+
+React.js, React-router, Material UI
+
+Pure less
