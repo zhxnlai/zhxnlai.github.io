@@ -20,7 +20,7 @@
 
   //Render the main app component
   // React.render(AppRoutes, document.body);
-  Router.run(AppRoutes, function (Handler) {
+  Router.run(AppRoutes, Router.HistoryLocation, function (Handler) {
     React.render(<Handler/>, document.body);
   });
 
