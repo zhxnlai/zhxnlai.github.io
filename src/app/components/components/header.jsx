@@ -14,11 +14,12 @@ var Header = React.createClass({
   _onButtonClick: function(ref, i) {
       this.transitionTo(ref);
   },
+  
   render: function() {
     var pageButtons = this.props.pages.map(function(page, i) {
       return (
-        <li>
-        <PaperButton className="demo-button" key={page.title} ref={page.title} primary={this.isActive(page.title)} type="FAB" icon={page.icon} onClick={this._onButtonClick.bind(this, page.title, i)}/>
+        <li key={i}>
+          <PaperButton className="demo-button" key={page.title} ref={page.title} primary={this.isActive(page.title)} type="FAB" icon={page.icon} onClick={this._onButtonClick.bind(this, page.title, i)}/>
         </li>
       );
     }, this);

@@ -29,7 +29,11 @@ var AboutPage = React.createClass({
             <Headline headline="About"
             subheadHtml={
               <p className="mui-font-style-title">I am a third-year computer science student at UCLA.
+              <br/>
+              <br/> In summer 2015, I will be working for Youtube mobile app team at Google.
+              <br/> In spring 2015, I interned at CDG labs LA.
               <br/> I love startup culture and in summer 2014, I co-founded <a href="http://axcelstudio.com">axcelstudio</a>.
+              <br/>
               <br/> In my spare time, I cook and code.</p>}/>
             <div className="l-box-lrg-bottom pure-g">
             </div>

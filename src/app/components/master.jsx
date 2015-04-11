@@ -16,6 +16,7 @@ var Router = require('react-router'),
 RouteHandler = Router.RouteHandler;
 
 var pages =[{title: "home", icon: "action-home"},
+            {title: "research", icon: "social-school"},
             {title: "apps", icon: "hardware-phone-iphone"},
             {title: "games", icon: "hardware-gamepad"},
             {title: "code", icon: "mui-icon-github"},
