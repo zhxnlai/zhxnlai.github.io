@@ -8,16 +8,15 @@
   <meta name="description" content="Zhixuan Lai's profolio site.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>
-  // var host = "zhxnlai.github.io";
-  // if ((host == window.location.host) && (window.location.protocol != "https:"))
-  //   window.location.protocol = "https";
-  </script>
-  <script type="text/javascript">
-  link = document.createElement( "link" );
-  link.type = "text/css";
-  link.rel = "stylesheet";
-  link.href = (window.location.protocol != "https:") ? "main-http.css" : "main.css";
-  document.getElementsByTagName( "head" )[0].appendChild( link );
+  var host = "zhxnlai.github.io";
+  if ((host == window.location.host) && (window.location.protocol != "https:")) {
+    link = document.createElement( "link" );
+    link.type = "text/css";
+    link.rel = "stylesheet";
+    link.cssText = "@import url(//fonts.useso.com/css?family=Roboto:300,400,500);";
+    document.getElementsByTagName( "head" )[0].appendChild( link );
+    // window.location.protocol = "https";
+  }
   </script>
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -29,7 +28,7 @@
   ga('send', 'pageview');
 
   </script>
-  <!-- <link rel="stylesheet" type="text/css" href="main.css"> -->
+  <link rel="stylesheet" type="text/css" href="main.css">
   <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 </head>
 
