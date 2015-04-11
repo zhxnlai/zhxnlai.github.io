@@ -11,42 +11,31 @@ var React = require('react'),
   Footer = require('./components/footer.jsx'),
   IconButton = mui.IconButton;
 
-  var ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
-  var Router = require('react-router'),
-  RouteHandler = Router.RouteHandler;
+var ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
+var Router = require('react-router'),
+RouteHandler = Router.RouteHandler;
 
-  var pageTitles = ["home", "apps", "games", "code", "about"];
-  var pageIcons = ["action-home", "hardware-phone-iphone", "hardware-gamepad", "mui-icon-github", "action-info-outline"];
-
-  // <div className={"webgl-globe "+globeClassName}>
-  // <WebGLGlobe />
-  // </div>
+var pages =[{title: "home", icon: "action-home"},
+            {title: "apps", icon: "hardware-phone-iphone"},
+            {title: "games", icon: "hardware-gamepad"},
+            {title: "code", icon: "mui-icon-github"},
+            {title: "about", icon: "action-info-outline"}];
 
 var Master = React.createClass({
   mixins: [Router.State],
 
   render: function() {
-    var globeClassName = this.getPath()=="/home" ? "": "isHidden";
 
     return (
       <AppCanvas className="master" predefinedLayout={0}>
-        <Header pageTitles={pageTitles} pageIcons={pageIcons}/>
-          <ReactCSSTransitionGroup transitionName="example">
+        <Header pages={pages}/>
+          <ReactCSSTransitionGroup transitionName="example" component="div">
             <RouteHandler key={this.getPath()} />
           </ReactCSSTransitionGroup>
         <Footer />
       </AppCanvas>
     );
   },
-
-  _onGithubTouchTap: function() {
-    document.location.href='https://github.com/callemall/material-ui';
-  },
-
-  _onMenuIconButtonTouchTap: function() {
-    this.refs.leftNav.toggle();
-  }
-
 });
 
 module.exports = Master;

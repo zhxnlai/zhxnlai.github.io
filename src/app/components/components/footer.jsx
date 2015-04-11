@@ -13,10 +13,9 @@ var Footer = React.createClass({
     return {
       title: '',
       zDepth: 1
-    }
+    };
   },
   render: function() {
-
 
     return (
       <div className="footer">

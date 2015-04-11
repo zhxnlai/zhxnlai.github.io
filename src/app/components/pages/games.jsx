@@ -2,11 +2,11 @@
 * @jsx React.DOM
 */
 
-var React = require('react'),
-Router = require('react-router'),
-mui = require('material-ui'),
-FeatureList = require('../components/feature-list.jsx'),
-Headline = require('../components/headline.jsx');
+var React = require('react');
+var Router = require('react-router');
+var mui = require('material-ui');
+var Headline = require('../components/headline.jsx');
+var FeatureList = require('../components/feature-list.jsx');
 
 var features = [{heading: "Intersolar", route: "intersolar", img:"images/projects/intersolar/feature-cropped.png"},
                 {heading: "Horoscoper", route: "horoscoper", img:"images/projects/horoscoper/feature.png"},
@@ -22,7 +22,7 @@ var GamesPage = React.createClass({
   render: function() {
     return (
         <div className="home-page-hero full-page-section ">
-          <div className="full-page-section-center-content">
+          <div className="game full-page-section-center-content">
             <Headline headline="Games" subhead="Fun is important."/>
             <FeatureList features={features}/>
           </div>

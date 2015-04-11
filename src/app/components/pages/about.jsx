@@ -2,15 +2,11 @@
 * @jsx React.DOM
 */
 
-
-// <h2 className="mui-font-style-headline">
-// A CSS Framework and a Set of React Components <span className="no-wrap">that Implement</span> <span className="no-wrap">Google's Material Design</span>
-// </h2>
-
-var React = require('react'),
-Router = require('react-router'),
-mui = require('material-ui'),
-Headline = require('../components/headline.jsx');
+var React = require('react');
+var Router = require('react-router');
+var mui = require('material-ui');
+var Headline = require('../components/headline.jsx');
+var FeatureList = require('../components/feature-list.jsx');
 
 // <div className="pure-u-1-2">
 // <img className="pure-img-responsive" src="http://thecomputerboys.com/wp-content/uploads/2011/01/datamation-1965-well-dressed-programmer.png"/>
@@ -28,17 +24,14 @@ var AboutPage = React.createClass({
   mixins: [Router.Navigation],
   render: function() {
     return (
-
-        <div className=" full-page-section ">
-          <div className="about-page full-page-section-center-content">
+        <div className="full-page-section">
+          <div className="about full-page-section-center-content">
             <Headline headline="About"
             subheadHtml={
               <p className="mui-font-style-title">I am a third-year computer science student at UCLA.
               <br/> I love startup culture and in summer 2014, I co-founded <a href="http://axcelstudio.com">axcelstudio</a>.
               <br/> In my spare time, I cook and code.</p>}/>
             <div className="l-box-lrg-bottom pure-g">
-
-
             </div>
           </div>
         </div>

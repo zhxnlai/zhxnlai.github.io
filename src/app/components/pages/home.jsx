@@ -2,12 +2,11 @@
 * @jsx React.DOM
 */
 
-var React = require('react'),
-Router = require('react-router'),
-mui = require('material-ui'),
-Headline = require('../components/headline.jsx'),
-PaperButton = mui.PaperButton,
-Paper = mui.Paper;
+var React = require('react');
+var Router = require('react-router');
+var mui = require('material-ui');
+var Headline = require('../components/headline.jsx');
+var FeatureList = require('../components/feature-list.jsx');
 
 var HomePage = React.createClass({
   mixins: [Router.Navigation],

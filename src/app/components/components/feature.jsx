@@ -25,8 +25,8 @@ var Feature = React.createClass({
     return (
       <Paper className="feature-list-feature" zDepth={this.state.zDepth}
       onMouseOver={this._onMouseOver} onMouseOut={this._onMouseOut} onClick={this._onClick}>
-      <h3 className="feature-list-feature-heading">{this.props.heading}</h3>
-      <div className="feature-list-img-wrapper">{imgWrapper}</div>
+        <h3 className="feature-list-feature-heading">{this.props.heading}</h3>
+        <div className="feature-list-img-wrapper">{imgWrapper}</div>
       </Paper>
     );
   },
@@ -38,13 +38,11 @@ var Feature = React.createClass({
       zDepth: 4
     });
   },
-
   _onMouseOut: function() {
     this.setState({
       zDepth: 1
     });
   }
-
 });
 
 module.exports = Feature;

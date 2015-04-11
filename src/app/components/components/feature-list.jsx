@@ -13,21 +13,18 @@ var FeatureList = React.createClass({
     var featuresDivs = this.props.features.map(function(feature) {
       return (
         <div className="l-box pure-u-1 pure-u-sm-1 pure-u-md-1-2 pure-u-xl-1-3">
-        <Feature onClick={this._onClick} ref={feature.heading} heading={feature.heading} url={feature.url} route={feature.route} img={feature.img} />
+          <Feature ref={feature.heading} heading={feature.heading} url={feature.url} route={feature.route} img={feature.img} />
         </div>);
       }, this);
+      
     return (
-        <div className="feature-list l-box-lrg-bottom pure-g">
-          <div className="pure-u-1">
-          </div>
-          {featuresDivs}
+      <div className="feature-list l-box-lrg-bottom pure-g">
+        <div className="pure-u-1">
         </div>
-      );
-    },
-    _onClick: function(ref) {
-      // this.refs.ref
-      console.log("clicked "+ref);
-    }
-  });
+        {featuresDivs}
+      </div>
+    );
+  },
+});
 
-  module.exports = FeatureList;
+module.exports = FeatureList;
