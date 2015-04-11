@@ -1,6 +1,7 @@
 var dest = './build',
 src = './src',
 mui = '../node_modules/material-ui/src';
+var gutil = require('gulp-util');
 
 // TODO: set a flag: gulp-util, env.target, isProduction
 // TODO: ugilify
@@ -23,7 +24,8 @@ module.exports = {
     src + '/less/**',
     mui + '/less/**'
         ],
-    dest: dest
+    dest: dest,
+    debug: gutil.env.type !== 'production'
   },
   markup: {
     src: src + "/www/**",
@@ -40,7 +42,7 @@ module.exports = {
 
   browserify: {
     // Enable source maps
-    debug: true,
+    debug: gutil.env.type !== 'production',
     // A separate bundle will be generated for each
     // bundle config in the list below
     bundleConfigs: [{

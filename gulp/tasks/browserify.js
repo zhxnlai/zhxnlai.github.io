@@ -48,8 +48,8 @@ gulp.task('browserify', function(callback) {
         .pipe(source(bundleConfig.outputName))
         // uglify
         // .pipe(streamify(uglify()))
-        .pipe(gutil.env.type === 'production' ? streamify(uglify()) : gutil.noop())
-        
+        .pipe(config.debug ? gutil.noop() : streamify(uglify()))
+
         // Specify the output destination
         .pipe(gulp.dest(bundleConfig.dest))
         .on('end', reportFinished);
