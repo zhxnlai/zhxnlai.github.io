@@ -10,11 +10,16 @@
   <script>
   var host = "zhxnlai.github.io";
   if ((host == window.location.host) && (window.location.protocol != "https:")) {
-    link = document.createElement( "style" ); 
-    link.type = "text/css";
-    link.rel = "stylesheet";
-    link.cssText = "@import url(//fonts.useso.com/css?family=Roboto:300,400,500);";
-    document.getElementsByTagName( "head" )[0].appendChild( link );
+    var css = "@import url(//fonts.useso.com/css?family=Roboto:300,400,500);";
+    var style = document.createElement( "style" );
+    style.type = "text/css";
+    style.rel = "stylesheet";
+    if (style.styleSheet){
+      style.styleSheet.cssText = css;
+    } else {
+      style.appendChild(document.createTextNode(css));
+    }
+    document.getElementsByTagName( "head" )[0].appendChild( style );
     // window.location.protocol = "https";
   }
   </script>
