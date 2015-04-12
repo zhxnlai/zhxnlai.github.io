@@ -20,7 +20,7 @@ var Footer = React.createClass({
     return (
       <div className="footer">
         <a href="mailto:zhxnlai@gmail.com">zhxnlai@gmail.com</a>
-        <p>© 2013-2014 Zhixuan Lai</p>
+        <p>© 2014-2015 Zhixuan Lai</p>
       </div>
     );
   }
