@@ -31,7 +31,9 @@ var Feature = React.createClass({
     );
   },
   _onClick: function() {
-    this.props.onClick(this, this.props.heading);
+    if (this.props.onClick) {
+      this.props.onClick(this, this.props.heading);
+    }
   },
   _onMouseOver: function() {
     this.setState({
