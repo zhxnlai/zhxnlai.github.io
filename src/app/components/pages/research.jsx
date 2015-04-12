@@ -8,8 +8,8 @@ var mui = require('material-ui');
 var Headline = require('../components/headline.jsx');
 var FeatureList = require('../components/feature-list.jsx');
 
-var features = [{heading: "Prolog Visualizer", url: "https://prolog.firebaseapp.com/", img:"http://placehold.it/320x320"},
-                {heading: "Printf Visualizer", url: "https://zhxnlai.github.io/printf/", img:"http://placehold.it/320x320"},
+var features = [{heading: "Prolog Visualizer", url: "https://prolog.firebaseapp.com/", img:"images/projects/prolog/feature.jpg"},
+                {heading: "Printf Visualizer", url: "https://zhxnlai.github.io/printf/", img:"images/projects/printf/feature.png"},
                 {heading: "CamlBack", url: "https://camlback.github.io/", img:"http://placehold.it/320x320"},];
 
 var ResearchPage = React.createClass({
