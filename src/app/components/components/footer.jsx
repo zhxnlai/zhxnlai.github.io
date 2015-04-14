@@ -18,10 +18,10 @@ var Footer = React.createClass({
   render: function() {
 
     return (
-      <div className="footer">
+      <footer className="footer">
         <a href="mailto:zhxnlai@gmail.com">zhxnlai@gmail.com</a>
         <p>© 2014-2015 Zhixuan Lai</p>
-      </div>
+      </footer>
     );
   }
 

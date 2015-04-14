@@ -20,8 +20,13 @@ var Feature = React.createClass({
 
   render: function() {
     var img = <img className="feature-list-feature-image pure-img-responsive" src={this.props.img} />;
-    var imgWrapper = (this.props.url ? (<a href={this.props.url}>{img}</a>) :
-      (<Link to={this.props.route}>{img}</Link>));
+    var imgWrapper = (this.props.url ?
+      (<a href={this.props.url} title={this.props.heading}>{img}
+        <span className={"featureHeading"}>{this.props.heading}</span>
+      </a>) :
+      (<Link to={this.props.route} title={this.props.heading}>{img}
+        <span className={"featureHeading"}>{this.props.heading}</span>
+       </Link>));
     return (
       <Paper className="feature-list-feature" zDepth={this.state.zDepth}
       onMouseOver={this._onMouseOver} onMouseOut={this._onMouseOut} onClick={this._onClick}>
