@@ -59,6 +59,7 @@
   "dependencies": {
     "jquery.transit": "^0.9.12",
     "markdown": "^0.5.0",
+    "object-assign": "^2.0.0",
     "purecss": "^0.5.0",
     "react": "^0.12.1",
     "react-router": "^0.11.2",
