@@ -1033,8 +1033,8 @@ https://github.com/yui/pure/blob/master/LICENSE.md
 .feature-list .feature-list-feature-container:after{clear:both}}.footer{position:fixed;bottom:2em;right:2em;z-index:999;text-align:right;text-shadow:0 1px .5px rgba(0,0,0,0.87)}
 .footer a{color:rgba(255,255,255,0.87)}.footer p{margin:0 auto;padding:0;color:rgba(255,255,255,0.87);max-width:335px}
 .footer .mui-icon-button{color:rgba(255,255,255,0.87)}.header{position:fixed;top:0;right:0;z-index:999;padding-top:2em;padding-right:2em;padding-left:1em;margin:0;max-height:100%;overflow:auto}
-.header .pageTitle{display:none}.header li{list-style:none}.header li .demo-button,.header li .github-button{margin-bottom:2em}
-.header li .demo-button .mui-paper-button-content,.header li .github-button .mui-paper-button-content{color:#424242}
+.header .pageTitle{display:none}.header .hide{display:none}.header li{list-style:none}
+.header li .demo-button,.header li .github-button{margin-bottom:2em}.header li .demo-button .mui-paper-button-content,.header li .github-button .mui-paper-button-content{color:#424242}
 .header li .demo-button.mui-primary .mui-paper-container,.header li .github-button.mui-primary .mui-paper-container{background-color:#039be5}
 .header li .demo-button.mui-primary .mui-paper-container a,.header li .github-button.mui-primary .mui-paper-container a{color:#e1f5fe}
 .header li .github-button{margin-bottom:0}body{margin:0}a{color:#fafafa;text-decoration:none}
