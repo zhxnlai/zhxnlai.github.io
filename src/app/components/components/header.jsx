@@ -4,6 +4,7 @@ var React = require('react'),
   Paper = mui.Paper,
   PaperButton = mui.PaperButton;
 var Link = Router.Link;
+var cx = React.addons.classSet;
 
 var Header = React.createClass({
   mixins: [Router.Navigation, Router.State],
@@ -26,9 +27,13 @@ var Header = React.createClass({
       );
     }, this);
 
+    var navClassName = cx({
+      nav: true,
+      hide: this.props.hide
+    });
     return (
       <header className="header">
-        <nav>
+        <nav className={navClassName}>
           <ul>
           {pageButtons}
           </ul>

@@ -1,5 +1,6 @@
 var React = require('react'),
 mui = require('material-ui');
+var cx = React.addons.classSet;
 
 var Footer = React.createClass({
 
@@ -17,8 +18,12 @@ var Footer = React.createClass({
   },
   render: function() {
 
+    var footerClassName = cx({
+      footer: true,
+      hide: this.props.hide
+    });
     return (
-      <footer className="footer">
+      <footer className={footerClassName}>
         <a href="mailto:zhxnlai@gmail.com">zhxnlai@gmail.com</a>
         <p>© 2014-2015 Zhixuan Lai</p>
       </footer>

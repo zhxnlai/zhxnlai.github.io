@@ -26,14 +26,15 @@ var Master = React.createClass({
   mixins: [Router.State],
 
   render: function() {
-
+    var query = this.getQuery();
+    var hideNav = query.hideNav !== undefined;
     return (
       <AppCanvas className="master" predefinedLayout={0}>
-        <Header pages={pages}/>
+        <Header pages={pages} hide={hideNav}/>
           <ReactCSSTransitionGroup transitionName="example" component="div">
             <RouteHandler key={this.getPath()} />
           </ReactCSSTransitionGroup>
-        <Footer />
+        <Footer hide={hideNav}/>
       </AppCanvas>
     );
   },
