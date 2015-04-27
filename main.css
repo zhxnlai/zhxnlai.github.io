@@ -819,10 +819,11 @@ https://github.com/yui/pure/blob/master/LICENSE.md
 .pure-u-xl-4-5{width:80%;*width:79.969%}.pure-u-xl-5-6,.pure-u-xl-20-24{width:83.3333%;*width:83.3023%}
 .pure-u-xl-7-8,.pure-u-xl-21-24{width:87.5%;*width:87.469%}.pure-u-xl-11-12,.pure-u-xl-22-24{width:91.6667%;*width:91.6357%}
 .pure-u-xl-23-24{width:95.8333%;*width:95.8023%}.pure-u-xl-1,.pure-u-xl-1-1,.pure-u-xl-5-5,.pure-u-xl-24-24{width:100%}
-}.pure-img-responsive{width:100%;height:auto}.l-box{padding:1em}.l-box-lrg{padding:2em}
-.l-box-lrg-top{padding:2em 2em 0}.l-box-lrg-bottom{padding:0 2em 2em}.l-width{max-width:980px;margin:0 auto}
-.is-center{text-align:center}@media only screen and (min-width:375px){.l-box-lrg{padding:1em}
-.l-box-lrg-top{padding:1em 1em 0}.l-box-lrg-bottom{padding:0 1em 1em}}.master{z-index:1;background-color:#424242;overflow:hidden;height:100%;width:100%}
+}.pure-img-responsive{width:100%;height:auto}.l-box{padding:1em}.l-box-lrg{padding:.5em}
+.l-box-lrg-top{padding:.5em .5em 0}.l-box-lrg-bottom{padding:0 .5em .5em}.l-width{max-width:980px;margin:0 auto}
+.is-center{text-align:center}@media only screen and (min-width:768px){.l-box{padding:1em}
+.l-box-lrg{padding:2em}.l-box-lrg-top{padding:2em 2em 0}.l-box-lrg-bottom{padding:0 2em 2em}
+}.master{z-index:1;background-color:#424242;overflow:hidden;height:100%;width:100%}
 .example-enter{position:absolute;opacity:.3;transition-duration:.3s;transition-property:opacity;transition-timing-function:ease}
 .example-enter.example-enter-active{opacity:1}.example-leave{position:absolute;transition-duration:.3s;transition-property:opacity;transition-timing-function:ease;-webkit-transform:translate3d(0,0,0);opacity:1}
 .example-leave.example-leave-active{opacity:.01}.full-width-section{padding:24px}
@@ -834,8 +835,9 @@ https://github.com/yui/pure/blob/master/LICENSE.md
 .full-page-section:before,.full-page-section:after{content:" ";display:table}
 .full-page-section:after{clear:both}.full-page-section .full-page-section-center-content{max-width:1200px;width:80%;margin:0 auto}
 @media only screen and (min-width:375px){.full-page-section .full-page-section-center-content{width:90%}
-}.home-page{background:transparent url("images/home.jpg") center center no-repeat fixed;background-size:cover}
-.about h1,.about h2,.about p,.about li{color:rgba(255,255,255,0.87);font-weight:300}
+}.home-page{background:transparent url("images/home.jpg") center center no-repeat;background-size:cover}
+@media only screen and (min-width:375px){.home-page{background:transparent url("images/home.jpg") center center no-repeat fixed}
+}.about h1,.about h2,.about p,.about li{color:rgba(255,255,255,0.87);font-weight:300}
 .about li{list-style:none}.talkly-page .full-width-section-content{max-width:700px}
 .talkly-page p{font-size:20px;line-height:28px;padding-top:19px;margin-bottom:13px;letter-spacing:0;font-weight:500;color:rgba(0,0,0,0.87);font-weight:300;padding:0;margin:0}
 .talkly-page .talkly-hero{background-color:#039be5;overflow:hidden}.talkly-page .talkly-hero .svg-logo{margin-left:50%;transform:translateX(-50%);-webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);-o-transform:translateX(-50%);max-width:420px;width:80%}
@@ -867,8 +869,9 @@ https://github.com/yui/pure/blob/master/LICENSE.md
 .murmur-page .murmur-pitch{text-align:center}.murmur-page .murmur-pitch p{color:rgba(255,255,255,0.87)}
 .murmur-page .murmur-pitch .video-wrapper{position:relative;padding-bottom:56.25%;padding-top:25px;height:0;width:100%}
 .murmur-page .murmur-pitch .video-wrapper iframe{position:absolute;top:0;left:0;width:100%;height:100%}
-.murmur-page .murmur-mvp{background:transparent url("images/projects/murmur/v1/sketch.jpg") center center no-repeat fixed;background-size:cover;text-align:center;text-shadow:0 1px 1px rgba(0,0,0,0.87)}
-.murmur-page .murmur-mvp .full-width-section-content{max-width:1200px}.murmur-page .murmur-mvp h2{font-size:34px;line-height:40px;padding-top:8px;margin-bottom:12px;letter-spacing:-1px;font-weight:400;color:rgba(0,0,0,0.54)}
+.murmur-page .murmur-mvp{background:transparent url("images/projects/murmur/v1/sketch.jpg") center center no-repeat;background-size:cover;text-align:center;text-shadow:0 1px 1px rgba(0,0,0,0.87)}
+@media only screen and (min-width:375px){.murmur-page .murmur-mvp{background:transparent url("images/projects/murmur/v1/sketch.jpg") center center no-repeat fixed}
+}.murmur-page .murmur-mvp .full-width-section-content{max-width:1200px}.murmur-page .murmur-mvp h2{font-size:34px;line-height:40px;padding-top:8px;margin-bottom:12px;letter-spacing:-1px;font-weight:400;color:rgba(0,0,0,0.54)}
 .murmur-page .murmur-mvp p,.murmur-page .murmur-mvp h2{color:rgba(255,255,255,0.87)}
 .murmur-page .talkly-users{background-color:#f5f5f5;text-align:center}.murmur-page .talkly-users .full-width-section{padding:0}
 .murmur-page .talkly-users .full-width-section-content{max-width:100%}.murmur-page .talkly-users h2{font-size:34px;line-height:40px;padding-top:8px;margin-bottom:12px;letter-spacing:-1px;font-weight:400;color:rgba(0,0,0,0.54)}
@@ -878,23 +881,26 @@ https://github.com/yui/pure/blob/master/LICENSE.md
 .murmur-page .murmur-download{background-color:#eee;text-align:center}.murmur-page .murmur-download h3{margin:0;padding:0;font-weight:300}
 .murmur-page .murmur-download .mui-paper-button{margin-top:32px}.intersolar-page{text-shadow:0 1px 1px rgba(0,0,0,0.87)}
 .intersolar-page .full-width-section-content{max-width:700px}.intersolar-page p{font-size:20px;line-height:28px;padding-top:19px;margin-bottom:13px;letter-spacing:0;font-weight:500;color:rgba(0,0,0,0.87);font-weight:300;padding:0;margin:0}
-.intersolar-page h2{text-transform:capitalize}.intersolar-page .intersolar-hero{background:transparent url("images/projects/intersolar/hero.png") center center no-repeat fixed;background-size:cover !important;height:100vh;width:100%;overflow:hidden;display:table}
-.intersolar-page .intersolar-hero .tagline{display:table-cell;vertical-align:middle;margin:16px auto 0 auto;text-align:center;max-width:575px}
+.intersolar-page h2{text-transform:capitalize}.intersolar-page .intersolar-hero{background:transparent url("images/projects/intersolar/hero.png") center center no-repeat;background-size:cover;height:100vh;width:100%;overflow:hidden;display:table}
+@media only screen and (min-width:375px){.intersolar-page .intersolar-hero{background:transparent url("images/projects/intersolar/hero.png") center center no-repeat fixed}
+}.intersolar-page .intersolar-hero .tagline{display:table-cell;vertical-align:middle;margin:16px auto 0 auto;text-align:center;max-width:575px}
 .intersolar-page .intersolar-hero .tagline h2{font-size:20px;line-height:28px;padding-top:19px;margin-bottom:13px;letter-spacing:0;font-weight:500;color:rgba(0,0,0,0.87)}
 .intersolar-page .intersolar-hero .tagline h1,.intersolar-page .intersolar-hero .tagline h2{color:rgba(255,255,255,0.87);font-weight:300}
 @media only screen and (min-width:992px){.intersolar-page .intersolar-hero .tagline{margin-top:32px}
 .intersolar-page .intersolar-hero .tagline h1{font-size:56px}.intersolar-page .intersolar-hero .tagline h2{font-size:24px;line-height:32px;padding-top:16px;margin-bottom:12px;letter-spacing:0;font-weight:400;color:rgba(0,0,0,0.87);color:rgba(255,255,255,0.87);font-weight:300}
 }.intersolar-page .intersolar-intro{background-color:rgba(0,0,0,0.87);text-align:center}
-.intersolar-page .intersolar-intro p{color:rgba(255,255,255,0.87)}.intersolar-page .intersolar-video{background:transparent url("images/projects/intersolar/skybox-cropped.png") center center no-repeat fixed;background-size:cover !important;text-align:center}
-.intersolar-page .intersolar-video p{color:rgba(255,255,255,0.87)}.intersolar-page .intersolar-video .video-wrapper{position:relative;padding-bottom:56.25%;padding-top:25px;height:0;width:100%}
+.intersolar-page .intersolar-intro p{color:rgba(255,255,255,0.87)}.intersolar-page .intersolar-video{background:transparent url("images/projects/intersolar/skybox-cropped.png") center center no-repeat;background-size:cover;text-align:center}
+@media only screen and (min-width:375px){.intersolar-page .intersolar-video{background:transparent url("images/projects/intersolar/skybox-cropped.png") center center no-repeat fixed}
+}.intersolar-page .intersolar-video p{color:rgba(255,255,255,0.87)}.intersolar-page .intersolar-video .video-wrapper{position:relative;padding-bottom:56.25%;padding-top:25px;height:0;width:100%}
 .intersolar-page .intersolar-video .video-wrapper iframe{position:absolute;top:0;left:0;width:100%;height:100%}
 .intersolar-page .intersolar-features{background-color:rgba(0,0,0,0.87);text-align:center}
 .intersolar-page .intersolar-features h2{font-size:34px;line-height:40px;padding-top:8px;margin-bottom:12px;letter-spacing:-1px;font-weight:400;color:rgba(0,0,0,0.54)}
 .intersolar-page .intersolar-features h2,.intersolar-page .intersolar-features p{color:rgba(255,255,255,0.87)}
 .intersolar-page .intersolar-inspiration{background-color:#f5f5f5;text-align:center}
 .intersolar-page .intersolar-inspiration h2{font-size:34px;line-height:40px;padding-top:8px;margin-bottom:12px;letter-spacing:-1px;font-weight:400;color:rgba(0,0,0,0.54)}
-.intersolar-page .intersolar-hack-sc{background:transparent url("images/projects/intersolar/hack-sc.jpg") center center no-repeat fixed !important;background-size:cover !important;text-align:center}
-.intersolar-page .intersolar-hack-sc h2{font-size:34px;line-height:40px;padding-top:8px;margin-bottom:12px;letter-spacing:-1px;font-weight:400;color:rgba(0,0,0,0.54)}
+.intersolar-page .intersolar-hack-sc{background:transparent url("images/projects/intersolar/hack-sc.jpg") center center no-repeat;background-size:cover;text-align:center}
+@media only screen and (min-width:375px){.intersolar-page .intersolar-hack-sc{background:transparent url("images/projects/intersolar/hack-sc.jpg") center center no-repeat fixed}
+}.intersolar-page .intersolar-hack-sc h2{font-size:34px;line-height:40px;padding-top:8px;margin-bottom:12px;letter-spacing:-1px;font-weight:400;color:rgba(0,0,0,0.54)}
 .intersolar-page .intersolar-hack-sc h2,.intersolar-page .intersolar-hack-sc p{color:rgba(255,255,255,0.87)}
 .intersolar-page .intersolar-hack-sc .tweet-box{text-align:center;overflow:hidden;text-shadow:none}
 .intersolar-page .intersolar-hack-sc .tweet-box blockquote.twitter-tweet{background-color:#fff;display:inline-block;padding:16px;margin:10px 0;max-width:468px;border:#ddd 1px solid;border-top-color:#eee;border-bottom-color:#bbb;border-radius:5px;box-shadow:0 1px 3px rgba(0,0,0,0.15);font:bold 14px/18px Helvetica,Arial,sans-serif;color:#000}
@@ -909,15 +915,17 @@ https://github.com/yui/pure/blob/master/LICENSE.md
 .intersolar-page .intersolar-download{background-color:#eee;text-align:center;text-shadow:none}
 .intersolar-page .intersolar-download h3{margin:0;padding:0;font-weight:300}.intersolar-page .intersolar-download .mui-paper-button{margin-top:32px}
 .horoscoper-page .full-width-section-content{max-width:700px}.horoscoper-page p{font-size:20px;line-height:28px;padding-top:19px;margin-bottom:13px;letter-spacing:0;font-weight:500;color:rgba(0,0,0,0.87);font-weight:300;padding:0;margin:0}
-.horoscoper-page .horoscoper-hero{text-shadow:0 1px 1px rgba(0,0,0,0.87);background:transparent url("images/projects/horoscoper/gameplay.png") center center no-repeat fixed;background-size:cover;height:100vh;width:100%;overflow:hidden;display:table}
-.horoscoper-page .horoscoper-hero .tagline{display:table-cell;vertical-align:middle;margin:16px auto 0 auto;text-align:center;max-width:575px}
+.horoscoper-page .horoscoper-hero{text-shadow:0 1px 1px rgba(0,0,0,0.87);background:transparent url("images/projects/horoscoper/gameplay.png") center center no-repeat;background-size:cover;height:100vh;width:100%;overflow:hidden;display:table}
+@media only screen and (min-width:375px){.horoscoper-page .horoscoper-hero{background:transparent url("images/projects/horoscoper/gameplay.png") center center no-repeat fixed}
+}.horoscoper-page .horoscoper-hero .tagline{display:table-cell;vertical-align:middle;margin:16px auto 0 auto;text-align:center;max-width:575px}
 .horoscoper-page .horoscoper-hero .tagline h2{font-size:20px;line-height:28px;padding-top:19px;margin-bottom:13px;letter-spacing:0;font-weight:500;color:rgba(0,0,0,0.87)}
 .horoscoper-page .horoscoper-hero .tagline h1,.horoscoper-page .horoscoper-hero .tagline h2{color:rgba(255,255,255,0.87);font-weight:300}
 @media only screen and (min-width:992px){.horoscoper-page .horoscoper-hero .tagline{margin-top:32px}
 .horoscoper-page .horoscoper-hero .tagline h1{font-size:56px}.horoscoper-page .horoscoper-hero .tagline h2{font-size:24px;line-height:32px;padding-top:16px;margin-bottom:12px;letter-spacing:0;font-weight:400;color:rgba(0,0,0,0.87);color:rgba(255,255,255,0.87);font-weight:300}
 }.horoscoper-page .horoscoper-intro{background-color:#212121;text-align:center}.horoscoper-page .horoscoper-intro p{color:rgba(255,255,255,0.87)}
-.horoscoper-page .horoscoper-features{text-shadow:0 1px 1px rgba(0,0,0,0.87);background:transparent url("images/projects/horoscoper/tycho-skymap.jpg") center center no-repeat fixed;background-size:cover;text-align:center}
-.horoscoper-page .horoscoper-features h2{font-size:34px;line-height:40px;padding-top:8px;margin-bottom:12px;letter-spacing:-1px;font-weight:400;color:rgba(0,0,0,0.54)}
+.horoscoper-page .horoscoper-features{text-shadow:0 1px 1px rgba(0,0,0,0.87);background:transparent url("images/projects/horoscoper/tycho-skymap.jpg") center center no-repeat;background-size:cover;text-align:center}
+@media only screen and (min-width:375px){.horoscoper-page .horoscoper-features{background:transparent url("images/projects/horoscoper/tycho-skymap.jpg") center center no-repeat fixed}
+}.horoscoper-page .horoscoper-features h2{font-size:34px;line-height:40px;padding-top:8px;margin-bottom:12px;letter-spacing:-1px;font-weight:400;color:rgba(0,0,0,0.54)}
 .horoscoper-page .horoscoper-features h2,.horoscoper-page .horoscoper-features p{color:rgba(255,255,255,0.87)}
 .horoscoper-page .horoscoper-features .is-center-vertically-wrapper{display:table}
 .horoscoper-page .horoscoper-features .is-center-vertically-content{display:table-cell;vertical-align:middle}
@@ -932,8 +940,9 @@ https://github.com/yui/pure/blob/master/LICENSE.md
 .horoscoper-page .horoscoper-download{background-color:#eee;text-align:center;text-shadow:none}
 .horoscoper-page .horoscoper-download h3{margin:0;padding:0;font-weight:300}.horoscoper-page .horoscoper-download .mui-paper-button{margin-top:32px}
 .spacinarium-page .full-width-section-content{max-width:700px}.spacinarium-page p{font-size:20px;line-height:28px;padding-top:19px;margin-bottom:13px;letter-spacing:0;font-weight:500;color:rgba(0,0,0,0.87);font-weight:300;padding:0;margin:0}
-.spacinarium-page .spacinarium-hero{background:transparent url("images/projects/spacinarium/top-down-shooting.png") center center no-repeat fixed;background-size:cover;height:100vh;width:100%;overflow:hidden;display:table}
-.spacinarium-page .spacinarium-hero .tagline{display:table-cell;vertical-align:middle;text-shadow:0 1px 1px rgba(255,255,255,0.87);margin:16px auto 0 auto;text-align:center;max-width:575px}
+.spacinarium-page .spacinarium-hero{background:transparent url("images/projects/spacinarium/top-down-shooting.png") center center no-repeat;background-size:cover;height:100vh;width:100%;overflow:hidden;display:table}
+@media only screen and (min-width:375px){.spacinarium-page .spacinarium-hero{background:transparent url("images/projects/spacinarium/top-down-shooting.png") center center no-repeat fixed}
+}.spacinarium-page .spacinarium-hero .tagline{display:table-cell;vertical-align:middle;text-shadow:0 1px 1px rgba(255,255,255,0.87);margin:16px auto 0 auto;text-align:center;max-width:575px}
 .spacinarium-page .spacinarium-hero .tagline h2{font-size:20px;line-height:28px;padding-top:19px;margin-bottom:13px;letter-spacing:0;font-weight:500;color:rgba(0,0,0,0.87)}
 .spacinarium-page .spacinarium-hero .tagline h1,.spacinarium-page .spacinarium-hero .tagline h2{color:rgba(0,0,0,0.87);font-weight:300}
 @media only screen and (min-width:992px){.spacinarium-page .spacinarium-hero .tagline{margin-top:32px}
@@ -958,15 +967,17 @@ https://github.com/yui/pure/blob/master/LICENSE.md
 .spacinarium-page .spacinarium-download{background-color:#eee;text-align:center;text-shadow:none}
 .spacinarium-page .spacinarium-download h3{margin:0;padding:0;font-weight:300}.spacinarium-page .spacinarium-download .mui-paper-button{margin-top:32px}
 .timid-turtle-page .full-width-section-content{max-width:700px}.timid-turtle-page p{font-size:20px;line-height:28px;padding-top:19px;margin-bottom:13px;letter-spacing:0;font-weight:500;color:rgba(0,0,0,0.87);font-weight:300;padding:0;margin:0}
-.timid-turtle-page .timid-turtle-hero{background:transparent url("images/projects/timid-turtle/city-background.png") center center no-repeat fixed;background-size:cover;overflow:hidden;text-shadow:0 1px 1px rgba(0,0,0,0.87)}
-.timid-turtle-page .timid-turtle-hero .svg-logo{margin-left:50%;transform:translateX(-50%);-webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);-o-transform:translateX(-50%);max-width:420px;width:80%}
+.timid-turtle-page .timid-turtle-hero{background:transparent url("images/projects/timid-turtle/city-background.png") center center no-repeat;background-size:cover;overflow:hidden;text-shadow:0 1px 1px rgba(0,0,0,0.87)}
+@media only screen and (min-width:375px){.timid-turtle-page .timid-turtle-hero{background:transparent url("images/projects/timid-turtle/city-background.png") center center no-repeat fixed}
+}.timid-turtle-page .timid-turtle-hero .svg-logo{margin-left:50%;transform:translateX(-50%);-webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);-o-transform:translateX(-50%);max-width:420px;width:80%}
 .timid-turtle-page .timid-turtle-hero .tagline{margin:16px auto 0 auto;text-align:center;max-width:575px}
 .timid-turtle-page .timid-turtle-hero .tagline h2{font-size:20px;line-height:28px;padding-top:19px;margin-bottom:13px;letter-spacing:0;font-weight:500;color:rgba(0,0,0,0.87)}
 .timid-turtle-page .timid-turtle-hero .tagline h1,.timid-turtle-page .timid-turtle-hero .tagline h2{color:rgba(255,255,255,0.87);font-weight:300}
 @media only screen and (min-width:992px){.timid-turtle-page .timid-turtle-hero .tagline{margin-top:32px}
 .timid-turtle-page .timid-turtle-hero .tagline h1{font-size:56px}.timid-turtle-page .timid-turtle-hero .tagline h2{font-size:24px;line-height:32px;padding-top:16px;margin-bottom:12px;letter-spacing:0;font-weight:400;color:rgba(0,0,0,0.87);color:rgba(255,255,255,0.87);font-weight:300}
-}.timid-turtle-page .timid-turtle-intro{background-color:#eee;text-align:center}.timid-turtle-page .timid-turtle-features{background:transparent url("images/projects/timid-turtle/belt.gif") center center no-repeat fixed;background-size:cover;background-attachment:scroll;text-shadow:0 1px 1px rgba(0,0,0,0.87);text-align:center}
-.timid-turtle-page .timid-turtle-features .full-width-section-content{max-width:1200px}
+}.timid-turtle-page .timid-turtle-intro{background-color:#eee;text-align:center}.timid-turtle-page .timid-turtle-features{background:transparent url("images/projects/timid-turtle/belt.gif") center center no-repeat;background-size:cover;background-attachment:scroll;text-shadow:0 1px 1px rgba(0,0,0,0.87);text-align:center}
+@media only screen and (min-width:375px){.timid-turtle-page .timid-turtle-features{background:transparent url("images/projects/timid-turtle/belt.gif") center center no-repeat fixed}
+}.timid-turtle-page .timid-turtle-features .full-width-section-content{max-width:1200px}
 .timid-turtle-page .timid-turtle-features h2{font-size:34px;line-height:40px;padding-top:8px;margin-bottom:12px;letter-spacing:-1px;font-weight:400;color:rgba(0,0,0,0.54)}
 .timid-turtle-page .timid-turtle-features p,.timid-turtle-page .timid-turtle-features h2{color:rgba(255,255,255,0.87)}
 .timid-turtle-page .timid-turtle-features .smaller-width{text-align:center;max-width:700px}
@@ -982,8 +993,9 @@ https://github.com/yui/pure/blob/master/LICENSE.md
 .timid-turtle-page .timid-turtle-download li{list-style:none;display:inline;list-style-type:none;padding-right:20px}
 .trig-vs-dots-page{z-index:0}.trig-vs-dots-page .full-width-section-content{max-width:700px}
 .trig-vs-dots-page p{font-size:20px;line-height:28px;padding-top:19px;margin-bottom:13px;letter-spacing:0;font-weight:500;color:rgba(0,0,0,0.87);font-weight:300;padding:0;margin:0}
-.trig-vs-dots-page .trig-vs-dots-hero{background:transparent url("images/projects/trig-vs-dots/gameplay-1.png") center center no-repeat fixed;background-size:cover;overflow:hidden;text-shadow:0 1px 1px rgba(0,0,0,0.87)}
-.trig-vs-dots-page .trig-vs-dots-hero .svg-logo{margin-left:50%;transform:translateX(-50%);-webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);-o-transform:translateX(-50%);max-width:420px;width:80%}
+.trig-vs-dots-page .trig-vs-dots-hero{background:transparent url("images/projects/trig-vs-dots/gameplay-1.png") center center no-repeat;background-size:cover;overflow:hidden;text-shadow:0 1px 1px rgba(0,0,0,0.87)}
+@media only screen and (min-width:375px){.trig-vs-dots-page .trig-vs-dots-hero{background:transparent url("images/projects/trig-vs-dots/gameplay-1.png") center center no-repeat fixed}
+}.trig-vs-dots-page .trig-vs-dots-hero .svg-logo{margin-left:50%;transform:translateX(-50%);-webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);-o-transform:translateX(-50%);max-width:420px;width:80%}
 .trig-vs-dots-page .trig-vs-dots-hero .tagline{margin:16px auto 0 auto;text-align:center;max-width:575px}
 .trig-vs-dots-page .trig-vs-dots-hero .tagline h2{font-size:20px;line-height:28px;padding-top:19px;margin-bottom:13px;letter-spacing:0;font-weight:500;color:rgba(0,0,0,0.87)}
 .trig-vs-dots-page .trig-vs-dots-hero .tagline h1,.trig-vs-dots-page .trig-vs-dots-hero .tagline h2{color:rgba(255,255,255,0.87);font-weight:300}
